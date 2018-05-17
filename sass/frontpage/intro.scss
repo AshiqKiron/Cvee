@@ -1,0 +1,26 @@
+.intro {
+    background-color: var(--bgColor);
+    text-align: center;
+    padding: 2% 0 5%;
+  
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #000;
+    }
+  
+    p {
+      color: #9E9E9E;
+      margin: 5px 0;
+    }
+  
+    img {
+      border: 4px solid #fff;
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: 200px;
+      width: 250px;
+    }
+  }
+

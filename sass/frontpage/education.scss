@@ -1,0 +1,72 @@
+
+.education {
+    background-color: var(--bgColor);
+    padding: 3% 15%;
+  
+    a {
+      @include link;
+    }
+  
+    a:hover {
+      @include linkHover;
+    }
+
+  
+    .first {
+      display: flex;
+      .svg-inline--fa {
+        @include icon;
+      }
+      h3 {
+        @include title;
+      }
+    }
+    .objective {
+      @include text;
+    }
+  
+    .institution {
+      display: flex;
+
+      
+      .timeline {
+        width:24%;
+        color: #999;
+        font-size: 14px;
+      }
+  
+      .designation {
+        font-weight: bold;
+      }
+  
+      .name {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 13px;
+      }
+  
+      .address {
+        font-size: 13px;
+        color:var(--textColor);
+      }
+    }
+  }
+  
+  
+  @media (min-width: 300px) and (max-width: 1100px) {
+    .education {
+      padding: 3% 11%;
+      .institution {
+        display: block;
+        padding: 2% 0;
+  
+        .timeline {
+          width: 100%;
+        }
+      }
+    }
+  } 
+  

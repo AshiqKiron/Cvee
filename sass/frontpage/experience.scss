@@ -1,0 +1,55 @@
+
+  
+  .experience3 {
+    
+      background-color: var(--bgColor);
+      padding: 2% 15%;
+    
+      a {
+        @include link;
+      }
+  
+      a:hover {
+        @include linkHover;
+      }
+    
+      .first {
+        display: flex;
+        .svg-inline--fa {
+          @include icon;
+        }
+        h3 {
+          @include title;
+        }
+      }
+  
+      .company {
+        padding: 1% 0;
+        .timeline {
+          width:40%;
+          color: #999;
+          font-size: 14px;
+        }
+    
+        .designation {
+          font-weight: bold;
+          font-size: 14px;
+        }
+    
+        .comname {
+          font-size: 13px;
+          color: #444;
+        }
+    
+        .detail {
+          font-size: 13px;
+          color:var(--textColor);
+        }
+      }
+    
+  }
+  
+  @media (min-width: 300px) and (max-width: 800px) {
+    .experience3 .company .timeline {width: 100%;}
+  }
+  

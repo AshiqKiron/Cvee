@@ -1,0 +1,137 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	p {
+		font-size: 13px;
+	}
+}
+
+.rssSummary {
+	font-size: 14px;
+}
+
+.widget .table {
+	font-size: 14px;
+}
+
+.footer-widget {
+
+	.widget {
+		float: left;
+		width: 15%;
+		padding: 10px;
+		overflow: hidden;
+		margin: 2% 5%;
+	}
+
+	a {
+		@include link;
+		font-size: 14px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	li>ul, li>ol {
+		margin: 0;
+		padding: 0;
+	}
+
+	.widget-title {
+		font-size: 25px;
+	}
+
+	.wp-caption {
+		a {
+			border-bottom: none;
+		}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 8px 10px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+}
+
+#secondary {
+	max-width: 20%;
+	.widget {
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	a {
+		@include link;
+		font-size: 15px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	li>ul, li>ol {
+		margin: 0;
+		padding: 0;
+	}
+
+	.widget-title {
+		font-size: 25px;
+	}
+
+	.wp-caption {
+		a {
+			border-bottom: none;
+		}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 8px 10px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+}
+
+.site-footer {
+	text-align: center;
+
+	a {
+		@include link;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+}

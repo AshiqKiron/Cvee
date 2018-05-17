@@ -1,0 +1,73 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+
+
+
+//mixins
+@mixin icon {
+  font-size: 23px;
+  color: var(--iconColor);
+  height: 1.3em;
+ }
+
+@mixin title {
+  margin-top: -2px;
+  font-size: 23px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+  padding-left: 1%;
+ }
+
+@mixin text {
+  color:var(--textColor);
+  font-size: 14px;
+  text-align: justify;
+}
+
+@mixin link {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid #9e9e9e63;
+  transition: .5s ease all;
+}
+
+@mixin linkHover {
+  transition: .5s ease all;
+  color: #222;
+  border-bottom: 1px solid #00BCD4;
+  opacity: .7;
+}
+
+@mixin generalLinkHover {
+  color:#2196F3;
+  transition: .5s ease all;
+}

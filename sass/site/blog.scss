@@ -1,0 +1,156 @@
+
+  .blog_page {
+
+    .entry-header {
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        a {
+            font-size: 13px;
+            text-decoration: none;
+            color:#999;
+        }
+    }
+
+
+    .blog_pagination {
+        text-align: center;
+        background: #f0eee7f5;
+        padding: 2% 0;
+        
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color:#795548;
+            transition: .7s ease all;
+
+            &:hover {
+                opacity: .5;
+                transition: .7s ease all;
+            }
+        }
+    }
+
+  .bloglist {
+    background-color: var(--bgColor);
+    padding: 2% 15% 2%;
+    text-align: center;
+    
+    a {
+      @include link;
+    }
+  
+    a:hover {
+      @include linkHover;
+    }
+
+    .second {
+      width: auto;
+      overflow: hidden;
+      margin-bottom: 13%;
+      
+      .one {
+        position: relative;
+  
+        div {
+          height: 500px;
+          padding: 0 2%;
+        }
+      }
+      .two {
+        position: absolute;
+        right: 10%;
+        background: #e8e4d6;
+        margin-top: -10%;
+        padding:6% 2%;
+        margin-right: 1%;
+        box-shadow:5px 5px 20px 0px rgba(132, 132, 132, 0.29);
+        transition: .5s ease all;
+        
+        &:hover {
+          box-shadow:5px 5px 20px 5px rgba(132, 132, 132, 0.29);
+          transition: .5s ease all;
+        }
+
+        p {
+          margin-top: 0;
+          font-size: 12px;
+          color: #111;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 400;
+          white-space: nowrap;
+          text-transform: lowercase;
+        }
+        .link {
+          
+          background-color: transparent;
+          transition: .7s ease all;
+          font-size: 10px;
+  
+          &:hover {
+            color: #2196F3;
+            transition: .7s ease all;
+          }
+        }
+  
+        div {
+          padding-top: 10%;
+        }
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+  @media (min-width: 300px) and (max-width: 1200px) {
+    .blog_page .bloglist {
+      .second {
+        width: auto;
+        overflow: none;
+        
+        .one {
+          position: static;
+    
+          div {
+            height: auto;
+            padding: 0;
+          }
+        }
+        .two {
+          position: static;
+          right: 10%;
+          background: #e8e4d6;
+          margin-top: 0;
+          padding: 3% 7% 4%;
+          margin-right: 0;
+  
+          p {
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+          }
+  
+          h3 {
+            font-size: 18px;
+            font-weight: 400;
+            white-space: normal;
+          }
+          div {
+            padding-bottom: 4%;
+          }
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }

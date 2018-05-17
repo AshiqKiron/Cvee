@@ -1,0 +1,129 @@
+.archi-page-wrapper {
+    display: flex;
+    padding: 2% 10%;
+}
+
+.archi-article-wrapper {
+    display: flex;
+}
+
+.archive-page {
+    padding: 0% 0 5%;
+    margin: 0% 5%;
+
+    .page-header {
+        text-align: center;
+    }
+
+    article {
+        float: left;
+        word-break: break-all;
+        width: 44%;
+        margin-right: 3%;
+        background-color: var(--bgColor);
+        padding: 20px;
+        transition: .5s ease all;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05), 0 5px 10px -10px rgba(0, 0, 0, 0.83);
+
+        &:hover {
+            background-color: #9e9e9e36;
+            transition: .5s ease all;
+            box-shadow: 20px 15px 27px rgba(0, 0, 0, 0.05), 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        .entry-header {
+            padding-bottom: 2%;
+        }
+
+        .entry-meta {
+            font-size: 14px;
+            a {
+                @include link;
+                font-size: 13px;
+
+                &:hover {
+                    @include linkHover;
+                }
+            }
+        }
+
+        .entry-title {
+            margin-bottom: 10px;
+         a {
+            @include link;
+            font-size: 20px;
+            font-weight: 400;
+            border:none;
+           
+           
+            &:hover {
+                @include linkHover;
+                border:none;
+                color:#2196F3;
+            }
+        }
+    }
+  }
+}
+
+.posts-navigation {
+    padding: 5% 15%;
+
+    .nav-previous, .nav-next {
+        box-shadow: 1px 1px 10px 5px #eeeeeee0;
+        background-color: var(--bgColor);
+        padding: 20px;
+        border:1px solid #9e9e9e57;
+    }
+    a {
+        font-size: 16px;
+        @include link;
+        padding: 20px;
+        border-bottom: none;
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .archi-page-wrapper {
+        display: block;
+
+        article {
+            float: none;
+            width: 100%;
+            
+        }
+
+        .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    .footer-widget .widget {
+        float: none;
+        width: 100%;
+    }
+
+    #secondary {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+    .archi-page-wrapper {
+        display: block;
+
+        article {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    #secondary {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+#customize-controls .control-section-example-1 .accordion-section-title:hover,
+#customize-controls .control-section-example-1 .accordion-section-title:focus {
+	background-color: #fff;
+}
+
+.control-section-example-1 .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+	background-color: red;
+    color: #fff;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: red;
+    transition: .5s ease all;
+}
+
+.control-section-example-1 .accordion-section-title .button:hover {
+	border-color: #eee;
+    	color: red;
+    	background-color: #fff;
+    	transition: .5s ease all;
+}
+
+	.rtl .control-section-example-1 .accordion-section-title .button {
+		margin-left:  0;
+		margin-right: 8px;
+		box-shadow: none;
+    	text-shadow: none;
+    	transition: .5s ease all;
+    	
+
+	}
+
+

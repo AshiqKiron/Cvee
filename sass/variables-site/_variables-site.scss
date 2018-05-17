@@ -1,0 +1,14 @@
+:root {
+  --mainColor: red;
+  --textColor:  #777;
+  --titleColor: red;
+  --subTitleColor: red;
+  --bgColor: #f3f2ee;
+  --iconColor: rgba(38, 37, 37, 0.1);  
+}
+
+
+@import "colors";
+@import "typography";
+@import "structure";
+@import "columns";

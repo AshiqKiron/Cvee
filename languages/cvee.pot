@@ -1,0 +1,901 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CVEE  1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2018-05-17 20:23+0600\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-KeywordsList: _e;_;__;_n;_x;_ex;_nx;esc_attr__;esc_attr_e;esc_attr_x;"
+"esc_html__;esc_html_e;esc_html_x;_n_noop;_n_noop\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: languages/cvee.pot\n"
+"X-Poedit-SearchPath-1: languages\n"
+"X-Poedit-SearchPath-2: .\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:33
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:49
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: blog.php:14
+msgid "Edit"
+msgstr ""
+
+#: blog.php:56
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: blog.php:60
+msgid ""
+"Older Entries <i class=\"fas fa-angle-double-right\" aria-hidden=\"true\"></"
+"i> "
+msgstr ""
+
+#: blog.php:61
+msgid ""
+"<i class=\"fas fa-angle-double-left\" aria-hidden=\"true\"></i> Newer Entries "
+msgstr ""
+
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:41
+#, php-format
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:21
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:27
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:50
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:111
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:113
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:121 inc/customizer.php:64
+msgid "Footer"
+msgstr ""
+
+#: functions.php:123
+msgid "Add footer widgets here."
+msgstr ""
+
+#: functions.php:132 inc/customizer.php:45
+msgid "Frontpage"
+msgstr ""
+
+#: functions.php:134
+msgid "Add Frontpage widgets here."
+msgstr ""
+
+#: functions.php:185
+#, php-format
+msgid "More<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "This panel allows you to customize Header"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "This panel allows you to customize Frontpage"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Basic Site Settings"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "This panel allows you to customize site settings"
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "This panel allows you to customize Footer"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "Header Colors"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Hamburger Icon Color"
+msgstr ""
+
+#: inc/customizer.php:137
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid "Site Title Color"
+msgstr ""
+
+#: inc/customizer.php:173
+#, php-format
+msgid ""
+"<h2>To Setup frontpage, Go to:</h2></br>\n"
+"\t\t<ul>\n"
+"\t\t<li>1. <b>Dashboard -> Pages -> Add New</b></li>\n"
+"\t\t<li>2. On the right, you will find a box titled <b>Page Attributes</b></"
+"li>\n"
+"\t\t<li>3. Select <b>Front Page Template</b> from the dropdown <b>Template</"
+"b> options</li>\n"
+"\t\t<li>4. Type Page title & click on <b>Publish</b></li>\n"
+"\t\t<li>5. Go to <b>Dashboard -> Settings -> Reading -> Front page displays </"
+"b></li>\n"
+"\t\t<li>6. Select <b>A static page(select below)</b> </li>\n"
+"\t\t<li>7. Then select the page with <b>\"Front Page Template\"</b> as "
+"<b>Front Page</b></li>\n"
+"\t\t<li>8. Click on <b>Save & Publish</b> and you are done.</li>\n"
+"\t\t<li>9. Still struggling? Follow the documentation <a cveeget=\"_blank\" "
+"href=\"%s\">Front Page Setup Documentation</a>\n"
+"\t\t</ul></br>"
+msgstr ""
+
+#: inc/customizer.php:191
+msgid "Site Settings"
+msgstr ""
+
+#: inc/customizer.php:201
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer.php:219
+msgid "Font-Family"
+msgstr ""
+
+#: inc/customizer.php:242
+msgid "Line Height"
+msgstr ""
+
+#: inc/customizer.php:258
+msgid "Footer settings"
+msgstr ""
+
+#: inc/customizer.php:276
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/customizer.php:294
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/template-tags.php:29
+#, php-format
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:45
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:67
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:77
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:94 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/trt-customize-pro/example-1/class-customize.php:76
+msgid "cvee Pro"
+msgstr ""
+
+#: inc/trt-customize-pro/example-1/class-customize.php:77
+msgid "Go Pro"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:27
+msgid "CVEE Education Widget One"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:122
+#: inc/widgets/front-education-one.php:349
+msgid "fas fa-graduation-cap"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:123
+#: inc/widgets/front-education-one.php:347
+msgid "Education"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:126
+#: inc/widgets/front-education-one.php:132
+#: inc/widgets/front-education-one.php:139
+#: inc/widgets/front-education-one.php:146
+#: inc/widgets/front-education-one.php:153
+#: inc/widgets/front-education-one.php:355
+#: inc/widgets/front-education-one.php:359
+#: inc/widgets/front-education-one.php:363
+#: inc/widgets/front-education-one.php:367
+#: inc/widgets/front-education-one.php:371
+#: inc/widgets/front-experience-three.php:126
+#: inc/widgets/front-experience-three.php:132
+#: inc/widgets/front-experience-three.php:140
+#: inc/widgets/front-experience-three.php:147
+#: inc/widgets/front-experience-three.php:154
+#: inc/widgets/front-experience-three.php:392
+#: inc/widgets/front-experience-three.php:397
+#: inc/widgets/front-experience-three.php:402
+#: inc/widgets/front-experience-three.php:407
+#: inc/widgets/front-experience-three.php:412
+msgid "September 2013 - February 2014"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:127
+#: inc/widgets/front-education-one.php:133
+#: inc/widgets/front-education-one.php:140
+#: inc/widgets/front-education-one.php:147
+#: inc/widgets/front-education-one.php:154
+#: inc/widgets/front-education-one.php:360
+#: inc/widgets/front-education-one.php:364
+#: inc/widgets/front-education-one.php:368
+#: inc/widgets/front-education-one.php:372
+msgid "Bachelor of Engineering (B.Eng) Information and Communication Technology"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:128
+#: inc/widgets/front-education-one.php:134
+#: inc/widgets/front-education-one.php:141
+#: inc/widgets/front-education-one.php:148
+#: inc/widgets/front-education-one.php:155
+#: inc/widgets/front-experience-three.php:128
+#: inc/widgets/front-experience-three.php:134
+#: inc/widgets/front-experience-three.php:142
+#: inc/widgets/front-experience-three.php:149
+#: inc/widgets/front-experience-three.php:156
+msgid "Arthus University"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:129
+#: inc/widgets/front-education-one.php:135
+#: inc/widgets/front-education-one.php:142
+#: inc/widgets/front-education-one.php:149
+#: inc/widgets/front-education-one.php:156
+#: inc/widgets/front-education-one.php:358
+#: inc/widgets/front-education-one.php:362
+#: inc/widgets/front-education-one.php:366
+#: inc/widgets/front-education-one.php:370
+#: inc/widgets/front-education-one.php:374
+#: inc/widgets/front-experience-three.php:395
+#: inc/widgets/front-experience-three.php:400
+#: inc/widgets/front-experience-three.php:405
+#: inc/widgets/front-experience-three.php:410
+#: inc/widgets/front-experience-three.php:415
+msgid "https://asphaltthemes.com"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:356
+msgid ""
+"Bachelor of Engineering (B.Eng) Information and Communication "
+"Technology        "
+msgstr ""
+
+#: inc/widgets/front-education-one.php:357
+#: inc/widgets/front-education-one.php:361
+#: inc/widgets/front-education-one.php:365
+#: inc/widgets/front-education-one.php:369
+#: inc/widgets/front-education-one.php:373
+#: inc/widgets/front-experience-three.php:394
+#: inc/widgets/front-experience-three.php:399
+#: inc/widgets/front-experience-three.php:404
+#: inc/widgets/front-experience-three.php:409
+#: inc/widgets/front-experience-three.php:414
+msgid "Asphalt Themes"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:384
+#: inc/widgets/front-experience-three.php:427
+msgid "<b>Icon:</b>"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:387
+msgid "Graduation Cap"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:388
+#: inc/widgets/front-experience-three.php:431
+msgid "Address Book"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:389
+#: inc/widgets/front-experience-three.php:432
+msgid "Address Card"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:390
+#: inc/widgets/front-experience-three.php:433
+msgid "Align Justify"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:391
+#: inc/widgets/front-experience-three.php:434
+msgid "Align Double Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:392
+#: inc/widgets/front-experience-three.php:435
+msgid "Double Left"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:393
+#: inc/widgets/front-experience-three.php:436
+msgid "Angle Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:394
+#: inc/widgets/front-experience-three.php:437
+msgid "Angle Left"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:395
+#: inc/widgets/front-experience-three.php:438
+msgid "Angle Double Down"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:396
+#: inc/widgets/front-experience-three.php:439
+msgid "Angle Down"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:397
+#: inc/widgets/front-experience-three.php:440
+msgid "Circle Arrow Down"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:398
+#: inc/widgets/front-experience-three.php:441
+msgid "Circle Arrow Left"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:399
+#: inc/widgets/front-experience-three.php:442
+msgid "Circle Arrow Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:400
+#: inc/widgets/front-experience-three.php:443
+msgid "Arrow Down"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:401
+#: inc/widgets/front-education-one.php:432
+#: inc/widgets/front-experience-three.php:444
+#: inc/widgets/front-experience-three.php:475
+msgid "Arrow Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:402
+#: inc/widgets/front-experience-three.php:445
+msgid "Arrow Left"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:403
+#: inc/widgets/front-experience-three.php:446
+msgid "Asterisk"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:404
+#: inc/widgets/front-experience-three.php:447
+msgid "Bell"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:405
+#: inc/widgets/front-experience-three.php:448
+msgid "Bolt"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:406
+#: inc/widgets/front-experience-three.php:449
+msgid "Bookmark"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:407
+#: inc/widgets/front-experience-three.php:450
+msgid "Bullseye"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:408
+#: inc/widgets/front-experience-three.php:451
+msgid "Briefcase"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:409
+#: inc/widgets/front-experience-three.php:452
+msgid "Calendar"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:410
+#: inc/widgets/front-experience-three.php:453
+msgid "Calendar Plus"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:411
+#: inc/widgets/front-experience-three.php:454
+msgid "Caret Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:412
+#: inc/widgets/front-experience-three.php:455
+msgid "Caret Square Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:413
+#: inc/widgets/front-experience-three.php:456
+msgid "Certificate"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:414
+#: inc/widgets/front-experience-three.php:457
+msgid "Check"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:415
+#: inc/widgets/front-experience-three.php:458
+msgid "Check Circle"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:416
+#: inc/widgets/front-experience-three.php:459
+msgid "Check Square"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:417
+#: inc/widgets/front-experience-three.php:460
+msgid "Circle Right"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:418
+#: inc/widgets/front-experience-three.php:461
+msgid "Circle"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:419
+#: inc/widgets/front-experience-three.php:462
+msgid "Circle Fill"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:420
+#: inc/widgets/front-experience-three.php:463
+msgid "Cog"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:421
+#: inc/widgets/front-experience-three.php:464
+msgid "Compress"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:422
+#: inc/widgets/front-experience-three.php:465
+msgid "Dot Circle"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:423
+#: inc/widgets/front-experience-three.php:466
+msgid "Dot Circle 2"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:424
+#: inc/widgets/front-experience-three.php:467
+msgid "Envelope"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:425
+#: inc/widgets/front-experience-three.php:468
+msgid "Genderless"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:426
+#: inc/widgets/front-experience-three.php:469
+msgid "Hashtag"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:427
+#: inc/widgets/front-experience-three.php:470
+msgid "ID Badge"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:428
+#: inc/widgets/front-experience-three.php:471
+msgid "ID Card"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:429
+#: inc/widgets/front-experience-three.php:472
+msgid "Info"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:430
+#: inc/widgets/front-experience-three.php:473
+msgid "Info Circle"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:431
+#: inc/widgets/front-experience-three.php:474
+msgid "Lightbulb"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:433
+#: inc/widgets/front-experience-three.php:476
+msgid "Map"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:434
+#: inc/widgets/front-experience-three.php:477
+msgid "Map Marker"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:435
+#: inc/widgets/front-experience-three.php:478
+msgid "Map Pin"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:436
+#: inc/widgets/front-experience-three.php:479
+msgid "Minu Circle"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:437
+#: inc/widgets/front-experience-three.php:480
+msgid "Minus"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:438
+#: inc/widgets/front-experience-three.php:481
+msgid "Minus Square"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:439
+#: inc/widgets/front-experience-three.php:482
+msgid "Play"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:440
+#: inc/widgets/front-experience-three.php:483
+msgid "Plus"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:441
+#: inc/widgets/front-experience-three.php:484
+msgid "Plus Square"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:442
+#: inc/widgets/front-experience-three.php:485
+msgid "Plus Square 2"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:443
+#: inc/widgets/front-experience-three.php:486
+msgid "Square"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:444
+#: inc/widgets/front-experience-three.php:487
+msgid "Star"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:445
+#: inc/widgets/front-experience-three.php:488
+msgid "Star 2"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:446
+#: inc/widgets/front-experience-three.php:489
+msgid "Sun"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:447
+#: inc/widgets/front-experience-three.php:490
+msgid "Box Square"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:448
+#: inc/widgets/front-experience-three.php:491
+msgid "Times"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:449
+#: inc/widgets/front-experience-three.php:492
+msgid "Window Close"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:455
+#: inc/widgets/front-experience-three.php:498
+msgid "Icon Color"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:462
+#: inc/widgets/front-experience-three.php:505
+#: inc/widgets/front-intro-one.php:239
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:466
+#: inc/widgets/front-experience-three.php:509
+#: inc/widgets/front-intro-one.php:243 inc/widgets/front-intro-one.php:257
+msgid "Color"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:475
+#: inc/widgets/front-education-one.php:480
+#: inc/widgets/front-education-one.php:485
+#: inc/widgets/front-education-one.php:490
+#: inc/widgets/front-education-one.php:499
+#: inc/widgets/front-education-one.php:504
+#: inc/widgets/front-education-one.php:509
+#: inc/widgets/front-education-one.php:514
+#: inc/widgets/front-education-one.php:525
+#: inc/widgets/front-education-one.php:530
+#: inc/widgets/front-education-one.php:535
+#: inc/widgets/front-education-one.php:540
+#: inc/widgets/front-education-one.php:549
+#: inc/widgets/front-education-one.php:554
+#: inc/widgets/front-education-one.php:559
+#: inc/widgets/front-education-one.php:564
+#: inc/widgets/front-education-one.php:572
+#: inc/widgets/front-education-one.php:577
+#: inc/widgets/front-education-one.php:582
+#: inc/widgets/front-education-one.php:587
+#: inc/widgets/front-experience-three.php:518
+#: inc/widgets/front-experience-three.php:523
+#: inc/widgets/front-experience-three.php:528
+#: inc/widgets/front-experience-three.php:533
+#: inc/widgets/front-experience-three.php:538
+#: inc/widgets/front-experience-three.php:546
+#: inc/widgets/front-experience-three.php:551
+#: inc/widgets/front-experience-three.php:556
+#: inc/widgets/front-experience-three.php:561
+#: inc/widgets/front-experience-three.php:566
+#: inc/widgets/front-experience-three.php:576
+#: inc/widgets/front-experience-three.php:581
+#: inc/widgets/front-experience-three.php:586
+#: inc/widgets/front-experience-three.php:591
+#: inc/widgets/front-experience-three.php:596
+#: inc/widgets/front-experience-three.php:605
+#: inc/widgets/front-experience-three.php:610
+#: inc/widgets/front-experience-three.php:615
+#: inc/widgets/front-experience-three.php:620
+#: inc/widgets/front-experience-three.php:625
+#: inc/widgets/front-experience-three.php:633
+#: inc/widgets/front-experience-three.php:638
+#: inc/widgets/front-experience-three.php:643
+#: inc/widgets/front-experience-three.php:648
+#: inc/widgets/front-experience-three.php:653
+msgid "Text"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:594
+#: inc/widgets/front-experience-three.php:662
+msgid "Timeline Color"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:599
+msgid "Degree Color"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:604
+msgid "Institution Color"
+msgstr ""
+
+#: inc/widgets/front-education-one.php:610
+#: inc/widgets/front-experience-three.php:682
+#: inc/widgets/front-intro-one.php:264
+msgid "Background Color"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:27
+msgid "CVEE Experience Widget Three"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:123
+#: inc/widgets/front-experience-three.php:383
+msgid "Work Experience"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:127
+#: inc/widgets/front-experience-three.php:133
+#: inc/widgets/front-experience-three.php:141
+#: inc/widgets/front-experience-three.php:148
+#: inc/widgets/front-experience-three.php:155
+#: inc/widgets/front-experience-three.php:393
+#: inc/widgets/front-experience-three.php:398
+#: inc/widgets/front-experience-three.php:403
+#: inc/widgets/front-experience-three.php:408
+#: inc/widgets/front-experience-three.php:413
+msgid "UI Designer"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:129
+#: inc/widgets/front-experience-three.php:135
+#: inc/widgets/front-experience-three.php:143
+#: inc/widgets/front-experience-three.php:150
+#: inc/widgets/front-experience-three.php:157
+msgid "au.dk.com"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:130
+#: inc/widgets/front-experience-three.php:136
+#: inc/widgets/front-experience-three.php:144
+#: inc/widgets/front-experience-three.php:151
+#: inc/widgets/front-experience-three.php:158
+msgid ""
+"dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum "
+"dolorLorem ips dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum. um "
+"dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum "
+"dolorLorem ips dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:385
+msgid "fas fa-paperclip"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:396
+#: inc/widgets/front-experience-three.php:401
+#: inc/widgets/front-experience-three.php:406
+#: inc/widgets/front-experience-three.php:411
+#: inc/widgets/front-experience-three.php:416
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis "
+"metus et libero dictum, vitae suscipit orci ornare. Pellentesque bibendum "
+"quam at nunc porta congue. Nunc nulla erat, feugiat non purus a, efficitur "
+"accumsan lectus. Proin neque augue, cursus et feugiat et, faucibus sit amet "
+"lectus."
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:430
+msgid "Paper Clip"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:667
+msgid "Designation Color"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:672
+msgid "Company Name Color"
+msgstr ""
+
+#: inc/widgets/front-experience-three.php:677
+msgid "Job Description Color"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:27
+msgid "CVEE Intro Widget One"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:124 inc/widgets/front-intro-one.php:205
+msgid "John Doe"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:125 inc/widgets/front-intro-one.php:210
+msgid "Art Director"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:221
+msgid "Hero Image:"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:221
+msgid " (Suggested Size : 250 * 200 )"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:228
+msgid "Upload Image"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:232
+msgid "Border Color"
+msgstr ""
+
+#: inc/widgets/front-intro-one.php:252
+msgid "Sub Title"
+msgstr ""
+
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content-single.php:78
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:20
+msgid " "
+msgstr ""
+
+#: template-parts/content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr ""
+
+#: template-parts/content-single.php:67
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""

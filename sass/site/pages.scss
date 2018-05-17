@@ -1,0 +1,548 @@
+$padding: 5% 15%;
+$overflow:hidden;
+
+
+// content only page
+.content_only_page {
+    padding: $padding;
+    overflow: $overflow;
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 10px 20px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+
+    .post-edit-link {
+        text-decoration: none;
+        color: #9E9E9E;
+        font-size: 13px;
+        border: 1px solid #eee;
+        padding: 3px 4px;
+        transition: .5s ease all;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+// fullwidth_condensed_page
+.fullwidth_condensed_page {
+    padding: 3% 30%;
+    overflow: $overflow;
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 10px 20px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+
+    .post-edit-link {
+        text-decoration: none;
+        color: #9E9E9E;
+        font-size: 13px;
+        border: 1px solid #eee;
+        padding: 3px 4px;
+        transition: .5s ease all;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .fullwidth_condensed_page {
+        padding: 5% 10%;
+    }
+}
+
+
+// header_only_page
+
+.header_only_page {
+    padding: $padding;
+    overflow: $overflow;
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 10px 20px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+
+    .post-edit-link {
+        text-decoration: none;
+        color: #9E9E9E;
+        font-size: 13px;
+        border: 1px solid #eee;
+        padding: 3px 4px;
+        transition: .5s ease all;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+// left sidebar page
+.left_sidebar_page {
+    padding: 2% 5%;
+    overflow: $overflow;
+
+    .sidebar_widget {
+        float: left;
+        width: 30%;
+    }
+
+    .entry-header-main {
+        text-align: center
+    }
+
+    article {
+        float: right;
+        width: 60%;
+        word-break: break-all;
+    }
+    
+    .widget {
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	a {
+		@include link;
+		font-size: 15px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	li>ul, li>ol {
+		margin: 0;
+		padding: 0;
+	}
+
+	.widget-title {
+		font-size: 25px;
+	}
+
+	.wp-caption {
+		a {
+			border-bottom: none;
+		}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 8px 10px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+        .left_sidebar_page {
+            .sidebar_widget {
+            display: none;
+        }
+
+        article {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+
+// right_sidebar_page
+.right_sidebar_page {
+    padding: 2% 5%;
+    overflow: $overflow;
+
+    .sidebar_widget {
+        float: right;
+        width: 30%;
+    }
+
+    .entry-header-main {
+        text-align: center
+    }
+
+    article {
+        float: left;
+        width: 60%;
+        word-break: break-all;
+    }
+    
+    .widget {
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	a {
+		@include link;
+		font-size: 15px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	li>ul, li>ol {
+		margin: 0;
+		padding: 0;
+	}
+
+	.widget-title {
+		font-size: 25px;
+	}
+
+	.wp-caption {
+		a {
+			border-bottom: none;
+		}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 8px 10px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+}
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .right_sidebar_page {
+        .sidebar_widget {
+        display: none;
+    }
+
+    article {
+        float: none;
+        width: 100%;
+    }
+  }
+}
+
+
+// default page template 
+.default_page {
+    padding: 2% 15%;
+    overflow: $overflow;
+
+    .entry-header-main {
+        text-align: center
+    }
+
+    .entry-header {
+        text-align: center;
+    }
+    
+    .widget {
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	a {
+		@include link;
+		font-size: 15px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	li>ul, li>ol {
+		margin: 0;
+		padding: 0;
+	}
+
+	.widget-title {
+		font-size: 25px;
+	}
+
+	.wp-caption {
+		a {
+			border-bottom: none;
+		}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 8px 10px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+}
+
+
+// search page
+.search_page {
+    padding: 2% 10%;
+
+    .no-results {
+        text-align: center;
+
+        .page-title {
+            font-size: 50px;
+        }
+    }
+
+    .search-field {
+        padding: 13px 40px;
+    }
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        box-shadow: none;
+        text-shadow: none;
+        padding: 18px 30px;
+        background-color: var(--bgColor);
+        font-size: 15px;
+        color: #111;
+        cursor: pointer;
+        transition: .5s ease all;
+        border:1px solid #333;
+
+        &:hover {
+            border:1px solid var(--bgColor);
+            background: #111;
+            color: #fff;
+            transition: .5s ease all;
+        }
+    }
+
+    .page-title {
+        font-size: 50px;
+    }
+
+    article {
+        padding: 1% 0;
+        word-break: break-all;
+
+        .link-more {
+            display: none;
+        }
+
+        .entry-meta, .entry-footer {
+            font-size: 14px;
+
+            a {
+                font-size: 13px;
+            }
+        }
+
+        .post-edit-link {
+            padding: 2px;
+            border: 1px solid #eee;
+        }
+
+        .edit-link {
+            padding: 5px;
+        }
+
+        .entry-title {
+            font-size: 30px;
+            font-weight: 400;
+            
+            a {
+                border:none;
+
+                &:hover {
+                    @include linkHover;
+                    border:none;
+                }
+            }
+        }
+
+        .entry-summary {
+            font-size: 15px;
+        }
+
+        a {
+            @include link;
+
+            &:hover {
+                @include linkHover;
+            }
+        }
+    }
+}
+
+// error_page
+.error_page {
+    padding: 3% 10%;
+
+    .page-header {
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .err_form {
+        text-align: center;
+
+        .search-field {
+            padding: 13px 40px;
+        }
+    
+        button, input[type="button"], input[type="reset"], input[type="submit"] {
+            box-shadow: none;
+            text-shadow: none;
+            padding: 18px 30px;
+            background-color: var(--bgColor);
+            font-size: 15px;
+            color: #111;
+            cursor: pointer;
+            transition: .5s ease all;
+            border:1px solid #333;
+    
+            &:hover {
+                border:1px solid var(--bgColor);
+                background: #111;
+                color: #fff;
+                transition: .5s ease all;
+            }
+        }
+    }   
+
+    .error_widgets {
+        padding: 10% 0;
+
+        button, input[type="button"], input[type="reset"], input[type="submit"] {
+            box-shadow: none;
+            text-shadow: none;
+            padding: 10px 20px;
+            background-color: var(--bgColor);
+            font-size: 15px;
+            color: #111;
+            cursor: pointer;
+            transition: .5s ease all;
+            border:1px solid #333;
+    
+            &:hover {
+                border:1px solid var(--bgColor);
+                background: #111;
+                color: #fff;
+                transition: .5s ease all;
+            }
+        }
+
+        a {
+            @include link;
+
+            &:hover {
+                @include linkHover;
+            }
+        }
+    }
+
+    .widget {
+        float: left;
+        width: 25%;
+    }
+}
+
+
+
+@media (min-width: 300px) and (max-width: 800px)  {
+
+        .error_widgets {
+            .widget {
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+
+@media (min-width: 200px) and (max-width: 432px)   {
+    .err_form {
+
+        .search-field {
+            width: 100%;
+        }
+        .search-submit {
+            margin: 5% 0;
+            width: 100%;
+        }
+    }
+}
