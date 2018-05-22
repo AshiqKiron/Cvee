@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area cvee-single-post">
+	<div id="primary" class="content-area cv-single-post">
 		<main id="main" class="site-main">
 
 		<?php

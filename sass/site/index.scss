@@ -1,11 +1,13 @@
 .index-page-wrapper {
     display: flex;
     padding: 2% 10%;
+   
 }
 
 .index-page {
     padding: 0% 0 5%;
     margin: 0% 5%;
+    min-width: 60%;
 
     .page-header {
         text-align: center;

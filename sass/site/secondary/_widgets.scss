@@ -126,6 +126,8 @@
 
 .site-footer {
 	text-align: center;
+	background-color: #f3f2ee;
+	padding-top: 30px;
 
 	a {
 		@include link;
@@ -134,4 +136,8 @@
 			@include linkHover;
 		}
 	}
+}
+
+.page-template-landing-page .widget {
+	margin: 0;
 }
