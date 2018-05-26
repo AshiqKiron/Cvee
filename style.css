@@ -4,7 +4,7 @@ Theme URI: https://asphaltthemes.com/cvee
 Author: Asphalt Themes
 Author URI: https://twitter.com/AshiqKiron
 Description: Fully professional WordPress CV theme, You can use this theme to create online professional CV on the get go. CVEE is  clean and free theme for WordPress site owners.The theme comes with Full width layout, easy Logo upload. Resumee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, vCard or resume website. The best free WordPress CV theme 2018.
-Version: 0.0.1
+Version: 0.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cvee
@@ -1495,6 +1495,11 @@ button.sidr-class-menu-toggle {
 .site-footer {
     text-align: center;
     background-color: #f3f2ee;
+    padding: 10px 0;
+}
+
+.site-footer .site-info {
+    padding: 1% 0;
 }
 
 .site-footer a {
@@ -1511,6 +1516,10 @@ button.sidr-class-menu-toggle {
     color: #222;
     border-bottom: 1px solid #00BCD4;
     opacity: .7;
+}
+
+.page-template-landing-page .widget {
+    margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1720,6 +1729,7 @@ button.sidr-class-menu-toggle {
 
 .cv-single-post {
     overflow: hidden;
+    word-wrap: break-word;
 }
 
 .cv-single-post .post_top {
@@ -1754,6 +1764,7 @@ button.sidr-class-menu-toggle {
 .cv-single-post .post_top .entry-title {
     padding: 10% 0 0;
     font-size: 30px;
+    line-height: 1.5em;
 }
 
 .cv-single-post a {
@@ -1820,7 +1831,6 @@ button.sidr-class-menu-toggle {
     border: 1px solid #ddd;
     padding: 1px;
     font-size: 13px;
-    margin: 10px;
 }
 
 .post_mid .entry-meta {
@@ -3305,27 +3315,26 @@ object {
     display: block;
 }
 
-i.fas.fa-chevron-up {
+.fa-chevron-up {
     padding: 10px;
     display: none;
-    font-weight: 100;
-    color: rgba(68, 68, 68, .51);
+    background: rgba(51, 51, 51, .05);
+    font-weight: bold;
+    color: black;
     position: fixed;
-    border-radius: 100%;
-    bottom: 50px;
+    height: 40px;
+    width: 40px !important;
+    bottom: 50px !important;
     right: 20px;
-    font-size: 18px;
+    border: 1px solid rgba(51, 51, 51, .1);
+    -webkit-transition: 0.7s ease all;
+    transition: 0.7s ease all;
 }
 
-i.fas.fa-chevron-up:hover {
-    opacity: .9;
+.fa-chevron-up:hover {
     color: #333;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-}
-
-.scrolltotop {
-    float: right;
-    margin-right: 5%;
-    border: none;
+    -webkit-transition: 0.7s ease all;
+    transition: 0.7s ease all;
+    background-color: #fff;
+    border: 1px solid #555;
 }

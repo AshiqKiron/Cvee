@@ -127,8 +127,11 @@
 .site-footer {
 	text-align: center;
 	background-color: #f3f2ee;
-	padding-top: 30px;
+	padding: 10px 0;
 
+	.site-info {
+		padding: 1% 0;
+	}
 	a {
 		@include link;
 
