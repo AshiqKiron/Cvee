@@ -30,9 +30,8 @@ class cvee_intro_one_widget extends WP_Widget
 
     parent::__construct('cvee_intro_one_widget', 'Intro Widget One', $widget_ops);
 
-    add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
+    add_action('admin_enqueue_scripts', array($this, 'upload_scripts'));
     add_action('admin_enqueue_styles', array($this, 'upload_styles'));
-    add_action('admin_footer-widgets.php', array($this, 'print_scripts'), 9999);
     add_action('wp_enqueue_scripts', array(&$this, 'cvee_intro1_css'));
 
   }
@@ -43,11 +42,11 @@ class cvee_intro_one_widget extends WP_Widget
    */
   public function upload_scripts()
   {
-    if (function_exists('wp_enqueue_media')) {
-
+  if( function_exists( 'wp_enqueue_media' ) ) {
+      
       wp_enqueue_media();
-    }
-    wp_enqueue_script('cvee_intro_one_widget', get_template_directory_uri() . '/js/media-upload.js');
+  }
+      wp_enqueue_script('portfolioo_intro_one_widget', get_template_directory_uri() . '/js/media-upload.js');
   }
 
 
@@ -58,15 +57,14 @@ class cvee_intro_one_widget extends WP_Widget
    *
    * @param string $hook_suffix
    */
-  public function enqueue_scripts($hook_suffix)
-  {
-    if ('widgets.php' !== $hook_suffix) {
+  public function enqueue_scripts( $hook_suffix ) {
+    if ( 'widgets.php' !== $hook_suffix ) {
       return;
     }
 
-    wp_enqueue_style('wp-color-picker');
-    wp_enqueue_script('wp-color-picker');
-    wp_enqueue_script('underscore');
+    wp_enqueue_style( 'wp-color-picker' );
+    wp_enqueue_script( 'wp-color-picker' );
+    wp_enqueue_script( 'underscore' );
   }
 
 

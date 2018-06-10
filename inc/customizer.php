@@ -15,6 +15,15 @@ function cvee_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+
+	$wp_customize->get_section('header_image')->panel = 'header';
+	$wp_customize->get_section('title_tagline')->panel = 'header';
+	$wp_customize->get_section('static_front_page')->panel = 'frontpage';
+	$wp_customize->get_section('colors')->panel = 'basic_settings';
+	$wp_customize->get_section('background_image')->panel = 'basic_settings';
+	$wp_customize->get_control('header_textcolor')->section = 'header_section';
+	
+
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',

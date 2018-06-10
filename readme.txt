@@ -29,6 +29,10 @@ CV includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+#### 0.0.3 (10-06-2018)
+- Fix: Widget Media upload not working
+
+
 = 1.0 - May 12 2015 =
 * Initial release
 

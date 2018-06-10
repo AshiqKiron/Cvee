@@ -21,6 +21,10 @@ along with this program.  If not, see http://www.gnu.org/licenses/
 * Changelog *
 
 
+#### 0.0.3 (10-06-2018)
+- Fix: Widget Media upload not working
+
+
 #### 0.0.2 (26-05-2018)
 - Tweaks: CSS fixes
 - Fix: Smooth Scroll to top
