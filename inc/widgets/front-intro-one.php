@@ -46,7 +46,7 @@ class cvee_intro_one_widget extends WP_Widget
       
       wp_enqueue_media();
   }
-      wp_enqueue_script('portfolioo_intro_one_widget', get_template_directory_uri() . '/js/media-upload.js');
+      wp_enqueue_script('cvee_intro_one_widget', get_template_directory_uri() . '/js/media-upload.js');
   }
 
 
@@ -216,7 +216,7 @@ class cvee_intro_one_widget extends WP_Widget
 
 
         <p>
-            <label style="max-width: 100%;overflow: hidden;" for="<?php echo $this->get_field_name('heroimage'); ?>"><?php esc_html_e('Hero Image:', 'cvee'); ?></label> <span><?php esc_attr_e(' (Suggested Size : 250 * 200 )', 'cvee'); ?></span>
+            <label style="max-width: 100%;overflow: hidden;" for="<?php echo $this->get_field_name('heroimage'); ?>"><?php esc_html_e('Hero Image:', 'cvee'); ?></label> <span><?php esc_attr_e(' (Suggested Size : 250 * 250 )', 'cvee'); ?></span>
  
             <?php if (!empty($instance['heroimage'])) {
               ?> <img style="max-width: 100%;width:100%;overflow: hidden;" src="<?php echo esc_url($instance['heroimage']); ?>" class="widgtimgprv" /> <span style="float:right;cursor: pointer;" class="mediaremvbtn">X</span><?php 
