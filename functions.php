@@ -148,7 +148,7 @@ function cvee_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'cvee-sidr', get_template_directory_uri() . '/js/sidr.js', array('jquery'), '3.0.0', true );
 	wp_enqueue_script( 'cvee-js', get_template_directory_uri() . '/js/cv.js', array('jquery'), '0.0.1', true );
-	wp_enqueue_script( 'cvee-FontAwesome-5', 'https://use.fontawesome.com/releases/v5.0.2/js/all.js', array(), '5.0.10', true );
+	wp_enqueue_style('FontAwesome',get_template_directory_uri().'/assets/fonts/fontawesome-all.css', array(), '5.0.13' );
 	wp_enqueue_script( 'cvee-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

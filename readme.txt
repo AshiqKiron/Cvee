@@ -29,6 +29,12 @@ CV includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+#### 0.0.5 (16-06-2018)
+- Remove: removed schema markup from right sidebar page template
+- Remove: fontawesome function prefix
+- Add: Fontawesome assets instead linking externally
+
+
 #### 0.0.3 (10-06-2018)
 - Fix: Widget Media upload not working
 

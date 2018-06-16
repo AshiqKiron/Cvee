@@ -14,7 +14,7 @@
   
     .first {
       display: flex;
-      .svg-inline--fa {
+      .fa, .fas {
         @include icon;
       }
       h3 {

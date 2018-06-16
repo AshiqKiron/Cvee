@@ -4,7 +4,7 @@ Theme URI: https://asphaltthemes.com/cvee
 Author: Asphalt Themes
 Author URI: https://twitter.com/AshiqKiron
 Description: Fully professional WordPress CV theme, You can use this theme to create online professional CV on the get go. CVEE is  clean and free theme for WordPress site owners.The theme comes with Full width layout, easy Logo upload. Resumee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, vCard or resume website. The best free WordPress CV theme 2018.
-Version: 0.0.4
+Version: 0.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cvee
@@ -1082,10 +1082,11 @@ button.sidr-class-menu-toggle {
     display: flex;
 }
 
-.experience3 .first .svg-inline--fa {
+.experience3 .first .fa,
+.experience3 .first .fas {
     font-size: 23px;
     color: rgba(38, 37, 37, .1);
-    height: 1.3em;
+    height: 1em;
 }
 
 .experience3 .first h3 {
@@ -1159,10 +1160,11 @@ button.sidr-class-menu-toggle {
     display: flex;
 }
 
-.education .first .svg-inline--fa {
+.education .first .fa,
+.education .first .fas {
     font-size: 23px;
     color: rgba(38, 37, 37, .1);
-    height: 1.3em;
+    height: 1em;
 }
 
 .education .first h3 {

@@ -20,6 +20,14 @@ along with this program.  If not, see http://www.gnu.org/licenses/
 
 * Changelog *
 
+
+#### 0.0.5 (16-06-2018)
+- Remove: removed schema markup from right sidebar page template
+- Remove: fontawesome function prefix
+- Add: Fontawesome assets instead linking externally
+
+
+
 #### 0.0.4 (11-06-2018)
 - Fix: Intro Widget one function prefix
 - Tweak: Intro Widget One media size 
@@ -44,7 +52,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/
 
 Images are from pixabay.com and WordPress dummy contents released under GPL v2
 Tested up to WordPress: 4.9.6
-Requires WordPress    : 4.4
+Requires WordPress    : 4.5
 
 
 

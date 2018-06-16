@@ -22,7 +22,7 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<div class="sidebar_widget" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+				<div class="sidebar_widget">
 					<?php
 			        if ( ! dynamic_sidebar( 'sidebar' ) ) {
 				        the_widget( 'WP_Widget_Recent_Posts' );

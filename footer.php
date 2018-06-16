@@ -22,10 +22,10 @@
 				?>
 			</a>
 			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cvee' ), 'cvee', '<a href="https://twitter.com/AshiqKiron">Asphalt Themes</a>' );
-				?>
+				
+				<a href="<?php echo esc_url( __( 'https://asphaltthemes.com/', 'cvee' ) ); ?>"><?php esc_attr_e('Asphalt Themes', 'cvee'); ?></a>
+				
+				
 		</div><!-- .site-info -->
 		<a href="#" class="scrolltotop"><i class="fas fa-chevron-up"></i></a>
 	</footer><!-- #colophon -->
