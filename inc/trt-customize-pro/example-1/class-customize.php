@@ -5,8 +5,7 @@
  * @since  1.0.0
  * @access public
  */
-final class Cvee_Customize {
-
+final class Cvee {
 	/**
 	 * Returns the instance.
 	 *
@@ -15,17 +14,13 @@ final class Cvee_Customize {
 	 * @return object
 	 */
 	public static function get_instance() {
-
 		static $instance = null;
-
 		if ( is_null( $instance ) ) {
 			$instance = new self;
 			$instance->setup_actions();
 		}
-
 		return $instance;
 	}
-
 	/**
 	 * Constructor method.
 	 *
@@ -34,7 +29,6 @@ final class Cvee_Customize {
 	 * @return void
 	 */
 	private function __construct() {}
-
 	/**
 	 * Sets up initial actions.
 	 *
@@ -43,14 +37,11 @@ final class Cvee_Customize {
 	 * @return void
 	 */
 	private function setup_actions() {
-
 		// Register panels, sections, settings, controls, and partials.
 		add_action( 'customize_register', array( $this, 'sections' ) );
-
 		// Register scripts and styles for the controls.
 		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue_control_scripts' ), 0 );
 	}
-
 	/**
 	 * Sets up the customizer sections.
 	 *
@@ -60,18 +51,15 @@ final class Cvee_Customize {
 	 * @return void
 	 */
 	public function sections( $manager ) {
-
 		// Load custom sections.
-		require_once( trailingslashit( get_template_directory() ) . '/inc/trt-customize-pro/example-1/section-pro.php' );
-
+		require_once( trailingslashit( get_template_directory() ) . 'inc/trt-customize-pro/example-1/section-pro.php' );
 		// Register custom section types.
-		$manager->register_section_type( 'Cvee_Customize_Section_Pro' );
-
+		$manager->register_section_type( 'Cvee_Section_Pro' );
 		// Register sections.
 		$manager->add_section(
-			new Cvee_Customize_Section_Pro(
+			new Cvee_Section_Pro(
 				$manager,
-				'example_1',
+				'Cvee',
 				array(
 					'title'    => esc_html__( 'Cvee Pro', 'cvee' ),
 					'pro_text' => esc_html__( 'Go Pro', 'cvee' ),
@@ -80,7 +68,6 @@ final class Cvee_Customize {
 			)
 		);
 	}
-
 	/**
 	 * Loads theme customizer CSS.
 	 *
@@ -89,12 +76,9 @@ final class Cvee_Customize {
 	 * @return void
 	 */
 	public function enqueue_control_scripts() {
-
-		wp_enqueue_script( 'cvee-example-1-customize-controls', trailingslashit( get_template_directory_uri() ) . '/inc/trt-customize-pro/example-1/customize-controls.js', array( 'customize-controls' ) );
-
-		wp_enqueue_style( 'cvee-example-1-customize-controls', trailingslashit( get_template_directory_uri() ) . '/inc/trt-customize-pro/example-1/customize-controls.css' );
+		wp_enqueue_script( 'cvee-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/trt-customize-pro/example-1/customize-controls.js', array( 'customize-controls' ) );
+		wp_enqueue_style( 'cvee-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/trt-customize-pro/example-1/customize-controls.css' );
 	}
 }
-
 // Doing this customizer thang!
-Cvee_Customize::get_instance();
+Cvee::get_instance();

@@ -75,6 +75,11 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 
 ## Changelog
 
+#### 0.0.7 (22-06-2018)
+* Fix: Customizer error
+
+
+
 #### 0.0.6 (22-06-2018)
 * Fix: Theme upsell file issues (class-customize.php)
 * Change: readme.md format
