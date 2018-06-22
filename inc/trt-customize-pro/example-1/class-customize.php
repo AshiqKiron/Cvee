@@ -5,7 +5,7 @@
  * @since  1.0.0
  * @access public
  */
-final class Example_1_Customize {
+final class Cvee_Customize {
 
 	/**
 	 * Returns the instance.
@@ -65,17 +65,17 @@ final class Example_1_Customize {
 		require_once( trailingslashit( get_template_directory() ) . '/inc/trt-customize-pro/example-1/section-pro.php' );
 
 		// Register custom section types.
-		$manager->register_section_type( 'Example_1_Customize_Section_Pro' );
+		$manager->register_section_type( 'Cvee_Customize_Section_Pro' );
 
 		// Register sections.
 		$manager->add_section(
-			new Example_1_Customize_Section_Pro(
+			new Cvee_Customize_Section_Pro(
 				$manager,
 				'example_1',
 				array(
-					'title'    => esc_html__( 'cvee Pro', 'cvee' ),
-					'pro_text' => esc_html__( 'Go Pro',         'cvee' ),
-					'pro_url'  => 'https://asphaltthemes.com/cvee'
+					'title'    => esc_html__( 'Cvee Pro', 'cvee' ),
+					'pro_text' => esc_html__( 'Go Pro', 'cvee' ),
+					'pro_url'  => esc_url('https://asphaltthemes.com/cvee')
 				)
 			)
 		);
@@ -90,11 +90,11 @@ final class Example_1_Customize {
 	 */
 	public function enqueue_control_scripts() {
 
-		wp_enqueue_script( 'portfolioo-example-1-customize-controls', trailingslashit( get_template_directory_uri() ) . '/inc/trt-customize-pro/example-1/customize-controls.js', array( 'customize-controls' ) );
+		wp_enqueue_script( 'cvee-example-1-customize-controls', trailingslashit( get_template_directory_uri() ) . '/inc/trt-customize-pro/example-1/customize-controls.js', array( 'customize-controls' ) );
 
-		wp_enqueue_style( 'portfolioo-example-1-customize-controls', trailingslashit( get_template_directory_uri() ) . '/inc/trt-customize-pro/example-1/customize-controls.css' );
+		wp_enqueue_style( 'cvee-example-1-customize-controls', trailingslashit( get_template_directory_uri() ) . '/inc/trt-customize-pro/example-1/customize-controls.css' );
 	}
 }
 
 // Doing this customizer thang!
-Example_1_Customize::get_instance();
+Cvee_Customize::get_instance();

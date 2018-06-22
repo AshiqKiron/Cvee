@@ -1,107 +1,114 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Cvee 
 
-*CV WordPress Theme, Copyright 2012 Asphaltthemes.com*
-*CV is distributed under the terms of the GNU GPL*
-*CV WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.*
-*Underscores WordPress Theme is distributed under the terms of the GNU GPL*
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see http://www.gnu.org/licenses/
+**Contributors:** asphaltthemes, ashiquzzaman
+**Requires at least:** WordPress 4.4  
+**Tested up to:** WordPress 4.9.6
+**Stable tag:** 1.0
+**Version:** 0.0.6 
+**License:** GPLv2 or later  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**Tags:** education, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, three-columns, right-sidebar, flexible-header, custom-colors, custom-header, editor-style, featured-image-header, footer-widgets, full-width-template, theme-options, blog, portfolio
 
 
 
-* Changelog *
+## Description
+
+Fully professional WordPress CV theme, You can use this theme to create online professional CV on the get go. CVEE is  clean and free theme for WordPress site owners.The theme comes with Full width layout, easy Logo upload. Resumee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, vCard or resume website. The best free WordPress CV theme 2018.
+ 
+ 
+A few notes about the sections above:
+ 
+*   "Contributors" is a comma separated list of wp.orgusernames
+*   "Tags" is a comma separated list of tags that apply to the theme
+*   "Requires at least" is the lowest version that the plugin will work on
+*   "Tested up to" is the highest version that you've *successfully used to test the theme*. Note that it might work on
+higher versions... this is just the highest one you've verified.
+
+
+## Frequently Asked Questions
+
+* How to Install This theme ?
+Go to your WordPress Admin Panel & Log in (Ex: http://yourwebsite.com/wp-admin)
+Go to Appearance -> Themes -> Add New
+From top, Click on Upload Theme
+Choose the ZIP file you’ve downloaded & Click Install Now
+Click on Activate to active the theme
+Installing The Theme via FTP
+
+
+## Copyright
+
+Cvee WordPress Theme, Copyright 2016 WordPress.org
+Cvee is distributed under the terms of the GNU GPL
+
+Cvee  bundles the following third-party resources:
+
+normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
+**License:** MIT
+Source: https://necolas.github.io/normalize.css/
+
+Font Awesome icons, Copyright Dave Gandy
+**License:** SIL Open Font License, version 1.1.
+Source: http://fontawesome.io/
+
+Underscores starter theme -  Copyright: Automattic, automattic.com 
+**License:** Licensed under GPLv2 or later  
+Source: http://underscores.me/
+
+Google Fonts  -  Copyright: Google Fonts 
+**License:** SIL Open Font 
+Source: https://www.google.com/fonts/specimen/Source+Sans+Pro
+
+Sidr  -  Copyright: artberri
+**License:** licensed under The MIT License (MIT)
+Source: https://github.com/artberri/sidr
+
+Theme Upsell Code by Justin Tadlock  -  Copyright: Justin Tadlock
+**License:** GNU GPLv2  
+Source: https://github.com/justintadlock/trt-customizer-pro
+
+Intro Widget Face Image  -  Copyright: Pixabay
+**License:**  Creative Commons CC0
+Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
+
+
+
+## Changelog
+
+#### 0.0.6 (22-06-2018)
+* Fix: Theme upsell file issues (class-customize.php)
+* Change: readme.md format
+* Fix: Widget issues
 
 
 #### 0.0.5 (16-06-2018)
-- Remove: removed schema markup from right sidebar page template
-- Remove: fontawesome function prefix
-- Add: Fontawesome assets instead linking externally
-
+* Remove: removed schema markup from right sidebar page template
+* Remove: fontawesome function prefix
+* Add: Fontawesome assets instead linking externally
 
 
 #### 0.0.4 (11-06-2018)
-- Fix: Intro Widget one function prefix
-- Tweak: Intro Widget One media size 
+* Fix: Intro Widget one function prefix
+* Tweak: Intro Widget One media size 
 
 
 #### 0.0.3 (10-06-2018)
-- Fix: Widget Media upload not working
+* Fix: Widget Media upload not working
 
 
 #### 0.0.2 (26-05-2018)
-- Tweaks: CSS fixes
-- Fix: Smooth Scroll to top
+* Tweaks: CSS fixes
+* Fix: Smooth Scroll to top
+
+
+### 0.0.1
+* Released: May 26, 2018
 
 
 
 
-#### 0.0.1
-- Initial release 
 
 
 
 
-Images are from pixabay.com and WordPress dummy contents released under GPL v2
-Tested up to WordPress: 4.9.6
-Requires WordPress    : 4.5
 
-
-
-1. Face - https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
-
-
-CV WordPress Theme bundles the following third-party resources:
--------------------------------------------------------
-Credits:
--------------------------------------------------------
-
-
-* Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
-
-
-### 1. Underscores starter theme - Copyright: Automattic, automattic.com 
-    - URL                   http://underscores.me/
-    - Licence               Licensed under GPLv2 or later    
-    - Licence URL           http://www.gnu.org/licenses/gpl.html
-
-### 2. Font Awesome
-    - URL                   http://fortawesome.github.io/Font-Awesome/#license
-    - License               SIL Open Font & MIT
-    - License URL (MIT)     http://opensource.org/licenses/MIT
-    - License URL (OFL)     http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-
-
-### 3. Google Fonts - Source Sans Pro
-    - URL                   https://www.google.com/fonts/specimen/Source+Sans+Pro
-    - License               SIL Open Font
-    - License URL           http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-
-
-### 6. Sidr 
-    - URL - https://github.com/artberri/sidr
-    - License - License -jquery.matchHeight.js is licensed under The MIT License (MIT)
-    - License - Released under the MIT License
-
-
-### 7. Normalize CSS
-    - Author - Nicolas Gallagher and Jonathan Neal 
-    - License - The MIT License (MIT)   
-    - URL - https://github.com/necolas/normalize.css/blob/master/LICENSE.md
-    - Source - http://necolas.github.com/normalize.css/
-
-
-### 8. Theme Upsell Code by Justin Tadlock
-    - Author - Justin Tadlock
-    - License - GNU GPLv2  
-    - URL - https://github.com/justintadlock/trt-customizer-pro/blob/master/license.md
-    - Source - https://github.com/justintadlock/trt-customizer-pro

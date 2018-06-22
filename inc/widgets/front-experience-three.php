@@ -15,7 +15,7 @@ function cvee_experience_three_widget()
 add_action('widgets_init', 'cvee_experience_three_widget');
 
 
-class cvee_experience_three_widget extends WP_Widget
+class Cvee_Experience_Three_Widget extends WP_Widget
 {
     /**
      * Constructor
@@ -30,82 +30,10 @@ class cvee_experience_three_widget extends WP_Widget
 
         parent::__construct('cvee_experience_three_widget', 'Experience Widget Three', $widget_ops);
 
-        add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
-        add_action('admin_enqueue_styles', array($this, 'upload_styles'));
-        add_action('admin_footer-widgets.php', array($this, 'print_scripts'), 9999);
-        add_action('wp_enqueue_scripts', array(&$this, 'cvee_intro1_css'));
-
     }
 
 
-    /**
-     * Upload the Javascripts for the media uploader
-     */
-    public function upload_scripts()
-    {
-        if (function_exists('wp_enqueue_media')) {
-
-            wp_enqueue_media();
-        }
-        wp_enqueue_script('cvee_experience_three_widget', get_template_directory_uri() . '/js/media-upload.js');
-    }
-
-
-    /**
-     * Enqueue scripts.
-     *
-     * @since 1.0
-     *
-     * @param string $hook_suffix
-     */
-    public function enqueue_scripts($hook_suffix)
-    {
-        if ('widgets.php' !== $hook_suffix) {
-            return;
-        }
-
-        wp_enqueue_style('wp-color-picker');
-        wp_enqueue_script('wp-color-picker');
-        wp_enqueue_script('underscore');
-    }
-
-
-
-    /**
-     * Print scripts.
-     *
-     * @since 1.0
-     */
-    public function print_scripts()
-    {
-        ?>
-    <script>
-      ( function( $ ){
-        function initColorPicker( widget ) {
-          widget.find( '.color-picker' ).wpColorPicker( {
-            change: _.throttle( function() { // For Customizer
-              $(this).trigger( 'change' );
-            }, 3000 )
-          });
-        }
-
-        function onFormUpdate( event, widget ) {
-          initColorPicker( widget );
-        }
-
-        $( document ).on( 'widget-added widget-updated', onFormUpdate );
-
-        $( document ).ready( function() {
-          $( '#widgets-right .widget:has(.color-picker)' ).each( function () {
-            initColorPicker( $( this ) );
-          } );
-        } );
-      }( jQuery ) );
-    </script>
-    <?php
-
-}
-
+ 
 
 
 /**
@@ -158,16 +86,7 @@ public function widget($args, $instance)
     $exp5detail   = isset($instance['exp5detail']) ? apply_filters('', $instance['exp5detail']) : esc_attr__('dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ips dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum. um dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ips dolor Lorem ipsum dolor Lorem ipsum dolorLorem ipsum', 'cvee');
 
 
-    $exptimecolor   = isset($instance['exptimecolor']) ? $instance['exptimecolor'] : '';
-    $expdesigcolor  = isset($instance['expdesigcolor']) ? $instance['expdesigcolor'] : '';
-    $expcomcolor    = isset($instance['expcomcolor']) ? $instance['expcomcolor'] : '';
-    $expdetailcolor = isset($instance['expdetailcolor']) ? $instance['expdetailcolor'] : '';
-
-    $iconcolor      = isset($instance['iconcolor']) ? $instance['iconcolor'] : '';
-    $titlecolor     = isset($instance['titlecolor']) ? $instance['titlecolor'] : '';
-    $bgcolor        = isset($instance['bgcolor']) ? $instance['bgcolor'] : '';
-            
-          
+   
  
     /* Before widget (defined by themes). */
     echo $args['before_widget'];
@@ -298,25 +217,25 @@ public function widget($args, $instance)
     if (isset($exp5desig) && !empty($exp5desig)) {
         echo '<div class="company">
         <div class="one">
-        <p class="designation" itemprop="text">' . esc_html(do_shortcode($exp5desig)) . '</p>';
+        <p class="designation" itemprop="text">' . wp_kses_post(do_shortcode($exp5desig)) . '</p>';
     }
 
     if (isset($exp5com) && !empty($exp5com)) {
-        echo '<p class="comname" itemprop="text">' . esc_html(do_shortcode($exp5com)) . '<br>';
+        echo '<p class="comname" itemprop="text">' . wp_kses_post(do_shortcode($exp5com)) . '<br>';
     }
 
     if (isset($exp5comsite) && !empty($exp5comsite)) {
-        echo '<a href="' . esc_url(do_shortcode($exp5comsite)) . '" itemprop="url">' . esc_html(do_shortcode($exp5comsite)) . '</a></p>';
+        echo '<a href="' . esc_url(do_shortcode($exp5comsite)) . '" itemprop="url">' . wp_kses_post(do_shortcode($exp5comsite)) . '</a></p>';
     }
 
     if (isset($exp5time) && !empty($exp5time)) {
-        echo '<p class="timeline" itemprop="text">' . esc_html(do_shortcode($exp5time)) . '</p>';
+        echo '<p class="timeline" itemprop="text">' . wp_kses_post(do_shortcode($exp5time)) . '</p>';
     }
 
     echo '</div>
           <div class="cominfo">';
     if (isset($exp5detail) && !empty($exp5detail)) {
-        echo '<p class="detail" itemprop="text">' . esc_html(do_shortcode($exp5detail)) . '</p></div></div>';
+        echo '<p class="detail" itemprop="text">' . wp_kses_post(do_shortcode($exp5detail)) . '</p></div></div>';
     }
 
 
@@ -324,47 +243,6 @@ public function widget($args, $instance)
     echo '</div></div></section>';
 
 
-    if (is_customize_preview()) {
-        $id             = $this->id;
-
-        $exptimecolor   = 'color:#999;';
-        $expdesigcolor  = 'color:#000;';
-        $expcomcolor    = 'color:#444;';
-        $expdetailcolor = 'color:#777;';
-
-        $titlecolor     = 'color:#333;';
-        $bgcolor        = 'background-color:#f3f2ee;';
-        $iconcolor      = 'color:rgba(38,37,37,.1)';
-
-
-
-        if (!empty($instance['exptimecolor'])) {
-            $exptimecolor   = 'color: ' . $instance['exptimecolor'] . '; ';
-        }
-        if (!empty($instance['expdesigcolor'])) {
-            $expdesigcolor  = 'color: ' . $instance['expdesigcolor'] . '; ';
-        }
-        if (!empty($instance['expcomcolor'])) {
-            $expcomcolor    = 'color: ' . $instance['expcomcolor'] . '; ';
-        }
-        if (!empty($instance['expdetailcolor'])) {
-            $expdetailcolor = 'color: ' . $instance['expdetailcolor'] . '; ';
-        }
-
-        if (!empty($instance['titlecolor'])) {
-            $titlecolor     = 'color: ' . $instance['titlecolor'] . '; ';
-        }
-        if (!empty($instance['iconcolor'])) {
-            $iconcolor      = '' . $instance['iconcolor'] . '; ';
-        }
-        if (!empty($instance['bgcolor'])) {
-            $bgcolor        = 'background-color:' . $instance['bgcolor'] . '; ';
-        }
-
-
-        echo '<style>' . '#' . $id . ' .experience3 .first h3 {' . $titlecolor . '}#' . $id . ' .experience3 .first .svg-inline--fa { ' . $iconcolor . '}#' . $id . ' .experience3 {' . $bgcolor . '}#' . $id . ' .experience3  {' . $bgcolor . '}#' . $id . ' .experience3 .company .timeline {' . $exptimecolor . '}#' . $id . ' .experience3 .company .designation {' . $expdesigcolor . '}#' . $id . ' .experience3 .company .comname {' . $expcomcolor . '}#' . $id . ' .experience3 .company comname a, .experience3 a {' . $expcomcolor . '}#' . $id . ' .experience3 .company .detail {' . $expdetailcolor . '}</style>';
-
-    }
   
     /* After widget (defined by themes). */
     echo $args['after_widget'];
@@ -381,14 +259,7 @@ public function form($instance)
         /* Set up some default widget settings. */
     $defaults = array(
         'title'        => esc_attr__('Work Experience', 'cvee'),
-        'titlecolor'   => '#333',
         'icon1'        => __('fas fa-paperclip', 'cvee') ,
-        'iconcolor'    => 'rgba(38,37,37,.1)',
-        'bgcolor'      => '#f3f2ee',
-        'exptimecolor'   => '#999',
-        'expdesigcolor'  => '#000',
-        'expcomcolor'    => '#444',
-        'expdetailcolor' => '#777',
         'exp1time'     => esc_attr__('September 2013 - February 2014', 'cvee'),
         'exp1desig'    => esc_attr__('UI Designer', 'cvee'),
         'exp1com'      => esc_attr__('Asphalt Themes', 'cvee'),
@@ -494,10 +365,7 @@ public function form($instance)
             </select>
         </p>
 
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('iconcolor'); ?>"><?php _e('Icon Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('iconcolor'); ?>" name="<?php echo $this->get_field_name('iconcolor'); ?>" value="<?php echo $instance['iconcolor']; ?>" type="text" />
-        </p>
+      
         
         <br>
         <!-- Title -->
@@ -505,11 +373,7 @@ public function form($instance)
             <label for="<?php echo $this->get_field_name('title'); ?>"><?php esc_html_e('Title', 'cvee'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($instance['title']); ?>" />
         </p>
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('titlecolor'); ?>"><?php _e('Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('titlecolor'); ?>" name="<?php echo $this->get_field_name('titlecolor'); ?>" value="<?php echo $instance['titlecolor']; ?>" type="text" />
-        </p>
-
+    
 
         <br>
             
@@ -658,30 +522,7 @@ public function form($instance)
 
 
 
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('exptimecolor'); ?>"><?php _e('Timeline Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('exptimecolor'); ?>" value="<?php echo $instance['exptimecolor']; ?>" type="text" />
-        </p>
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('expdesigcolor'); ?>"><?php _e('Designation Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('expdesigcolor'); ?>" value="<?php echo $instance['expdesigcolor']; ?>" type="text" />
-        </p>
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('expcomcolor'); ?>"><?php _e('Company Name Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('expcomcolor'); ?>" value="<?php echo $instance['expcomcolor']; ?>" type="text" />
-        </p>
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('expdetailcolor'); ?>"><?php _e('Job Description Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('expdetailcolor'); ?>" value="<?php echo $instance['expdetailcolor']; ?>" type="text" />
-        </p>
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('bgcolor'); ?>"><?php _e('Background Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('bgcolor'); ?>" value="<?php echo $instance['bgcolor']; ?>" type="text" />
-        </p>
+      
         
     <?php
 
@@ -734,74 +575,10 @@ public function update($new_instance, $old_instance)
     $instance['exp5comsite']    = wp_kses_post($new_instance['exp5comsite']);
     $instance['exp5detail']     = wp_kses_post($new_instance['exp5detail']);
 
-    $instance['bgcolor']        = sanitize_hex_color($new_instance['bgcolor']);
-    $instance['titlecolor']     = sanitize_hex_color($new_instance['titlecolor']);
-    $instance['iconcolor']      = sanitize_hex_color($new_instance['iconcolor']);
-    $instance['exptimecolor']   = sanitize_hex_color($new_instance['exptimecolor']);
-    $instance['expdesigcolor']  = sanitize_hex_color($new_instance['expdesigcolor']);
-    $instance['expcomcolor']    = sanitize_hex_color($new_instance['expcomcolor']);
-    $instance['expdetailcolor'] = sanitize_hex_color($new_instance['expdetailcolor']);
+
 
     return $instance;
 }
 
-    //ENQUEUE CSS
-function cvee_intro1_css()
-{
-
-    $settings = $this->get_settings();
-    if (!is_customize_preview()) {
-        if (empty($settings)) {
-            return;
-        }
-
-        foreach ($settings as $instance_id => $instance) {
-            $id = $this->id_base . '-' . $instance_id;
-
-            if (!is_active_widget(false, $id, $this->id_base)) {
-                continue;
-            }
-
-            $exptimecolor   = 'color:#999;';
-            $expdesigcolor  = 'color:#000;';
-            $expcomcolor    = 'color:#444;';
-            $expdetailcolor = 'color:#777;';
-    
-            $titlecolor     = 'color:#333;';
-            $bgcolor        = 'background-color:#f3f2ee;';
-            $iconcolor      = 'rgba(38,37,37,.1);';
-
-
-            if (!empty($instance['exptimecolor'])) {
-                $exptimecolor   = 'color: ' . $instance['exptimecolor'] . '; ';
-            }
-            if (!empty($instance['expdesigcolor'])) {
-                $expdesigcolor  = 'color: ' . $instance['expdesigcolor'] . '; ';
-            }
-            if (!empty($instance['expcomcolor'])) {
-                $expcomcolor    = 'color: ' . $instance['expcomcolor'] . '; ';
-            }
-            if (!empty($instance['expdetailcolor'])) {
-                $expdetailcolor = 'color: ' . $instance['expdetailcolor'] . '; ';
-            }
-    
-            if (!empty($instance['titlecolor'])) {
-                $titlecolor     = 'color: ' . $instance['titlecolor'] . '; ';
-            }
-            if (!empty($instance['iconcolor'])) {
-                $iconcolor      = 'color:' . $instance['iconcolor'] . '; ';
-            }
-            if (!empty($instance['bgcolor'])) {
-                $bgcolor        = 'background-color:' . $instance['bgcolor'] . '; ';
-            }
-
-
-
-            $widget_style = '#' . $id . ' .experience3 .first h3 {' . $titlecolor . '}#' . $id . ' .experience3 .first .svg-inline--fa { ' . $iconcolor . '}#' . $id . ' .experience3 {' . $bgcolor . '}#' . $id . ' .experience3  {' . $bgcolor . '}#' . $id . ' .experience3 .company .timeline {' . $exptimecolor . '}#' . $id . ' .experience3 .company .designation {' . $expdesigcolor . '}#' . $id . ' .experience3 .company .comname {' . $expcomcolor . '}#' . $id . ' .experience3 .company comname a, .experience3 a {' . $expcomcolor . '}#' . $id . ' .experience3 .company .detail {' . $expdetailcolor . '}';
-            wp_add_inline_style('cvee-style', $widget_style);
-        }
-    }
-
-}
-
+   
 }

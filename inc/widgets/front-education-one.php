@@ -15,7 +15,7 @@ function cvee_education_one_widget()
 add_action('widgets_init', 'cvee_education_one_widget');
 
 
-class cvee_education_one_widget extends WP_Widget
+class Cvee_Education_One_Widget extends WP_Widget
 {
     /**
      * Constructor
@@ -30,81 +30,8 @@ class cvee_education_one_widget extends WP_Widget
 
         parent::__construct('cvee_education_one_widget', 'Education Widget One', $widget_ops);
 
-        add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
-        add_action('admin_enqueue_styles', array($this, 'upload_styles'));
-        add_action('admin_footer-widgets.php', array($this, 'print_scripts'), 9999);
-        add_action('wp_enqueue_scripts', array(&$this, 'cvee_intro1_css'));
-
     }
 
-
-    /**
-     * Upload the Javascripts for the media uploader
-     */
-    public function upload_scripts()
-    {
-        if (function_exists('wp_enqueue_media')) {
-
-            wp_enqueue_media();
-        }
-        wp_enqueue_script('cvee_education_one_widget', get_template_directory_uri() . '/js/media-upload.js');
-    }
-
-
-    /**
-     * Enqueue scripts.
-     *
-     * @since 1.0
-     *
-     * @param string $hook_suffix
-     */
-    public function enqueue_scripts($hook_suffix)
-    {
-        if ('widgets.php' !== $hook_suffix) {
-            return;
-        }
-
-        wp_enqueue_style('wp-color-picker');
-        wp_enqueue_script('wp-color-picker');
-        wp_enqueue_script('underscore');
-    }
-
-
-
-    /**
-     * Print scripts.
-     *
-     * @since 1.0
-     */
-    public function print_scripts()
-    {
-        ?>
-    <script>
-      ( function( $ ){
-        function initColorPicker( widget ) {
-          widget.find( '.color-picker' ).wpColorPicker( {
-            change: _.throttle( function() { // For Customizer
-              $(this).trigger( 'change' );
-            }, 3000 )
-          });
-        }
-
-        function onFormUpdate( event, widget ) {
-          initColorPicker( widget );
-        }
-
-        $( document ).on( 'widget-added widget-updated', onFormUpdate );
-
-        $( document ).ready( function() {
-          $( '#widgets-right .widget:has(.color-picker)' ).each( function () {
-            initColorPicker( $( this ) );
-          } );
-        } );
-      }( jQuery ) );
-    </script>
-    <?php
-
-}
 
 
 
@@ -154,17 +81,6 @@ public function widget($args, $instance)
     $edu5desig    = isset($instance['edu5desig']) ? apply_filters('', $instance['edu5desig']) : esc_attr__('Bachelor of Engineering (B.Eng) Information and Communication Technology', 'cvee');
     $edu5com      = isset($instance['edu5com']) ? apply_filters('', $instance['edu5com']) : esc_attr__('Arthus University', 'cvee');
     $edu5comsite  = isset($instance['edu5comsite']) ? apply_filters('', $instance['edu5comsite']) : esc_attr__('https://asphaltthemes.com', 'cvee');
-
-
-
-
-    $edutimecolor   = isset($instance['edutimecolor']) ? $instance['edutimecolor'] : '';
-    $edudesigcolor  = isset($instance['edudesigcolor']) ? $instance['edudesigcolor'] : '';
-    $educomcolor    = isset($instance['educomcolor']) ? $instance['educomcolor'] : '';
-
-    $iconcolor      = isset($instance['iconcolor']) ? $instance['iconcolor'] : '';
-    $titlecolor     = isset($instance['titlecolor']) ? $instance['titlecolor'] : '';
-    $bgcolor        = isset($instance['bgcolor']) ? $instance['bgcolor'] : '';
             
           
  
@@ -183,7 +99,7 @@ public function widget($args, $instance)
     echo '"></i>';
 
     if (isset($title) && !empty($title)) {
-        echo '<h3 itemprop="text">' . esc_html(do_shortcode($title)) . '</h3>';
+        echo '<h3 itemprop="text">' . wp_kses_post(do_shortcode($title)) . '</h3>';
     }
 
     echo '</div>
@@ -192,16 +108,16 @@ public function widget($args, $instance)
 
     if (isset($edu1time) && !empty($edu1time)) {
         echo '<div class="institution">
-        <p class="timeline" itemprop="text">' . esc_html(do_shortcode($edu1time)) . '</p>';
+        <p class="timeline" itemprop="text">' . wp_kses_post(do_shortcode($edu1time)) . '</p>';
     }
 
     if (isset($edu1desig) && !empty($edu1desig)) {
         echo '<div class="info">
-              <p class="name" itemprop="text">' . esc_html(do_shortcode($edu1desig)) . '</p>';
+              <p class="name" itemprop="text">' . wp_kses_post(do_shortcode($edu1desig)) . '</p>';
     }
 
     if (isset($edu5com) && !empty($edu5com)) {
-        echo '<p class="address" itemprop="text">' . esc_html(do_shortcode($edu5com)) . '<br>';
+        echo '<p class="address" itemprop="text">' . wp_kses_post(do_shortcode($edu5com)) . '<br>';
     }
 
     if (isset($edu1comsite) && !empty($edu1comsite)) {
@@ -212,16 +128,16 @@ public function widget($args, $instance)
 
     if (isset($edu2time) && !empty($edu2time)) {
         echo '<div class="institution">
-        <p class="timeline" itemprop="text">' . esc_html(do_shortcode($edu2time)) . '</p>';
+        <p class="timeline" itemprop="text">' . wp_kses_post(do_shortcode($edu2time)) . '</p>';
     }
 
     if (isset($edu2desig) && !empty($edu2desig)) {
         echo '<div class="info">
-              <p class="name" itemprop="text">' . esc_html(do_shortcode($edu2desig)) . '</p>';
+              <p class="name" itemprop="text">' . wp_kses_post(do_shortcode($edu2desig)) . '</p>';
     }
 
     if (isset($edu5com) && !empty($edu5com)) {
-        echo '<p class="address" itemprop="text">' . esc_html(do_shortcode($edu5com)) . '<br>';
+        echo '<p class="address" itemprop="text">' . wp_kses_post(do_shortcode($edu5com)) . '<br>';
     }
 
     if (isset($edu2comsite) && !empty($edu2comsite)) {
@@ -233,16 +149,16 @@ public function widget($args, $instance)
 
     if (isset($edu3time) && !empty($edu3time)) {
         echo '<div class="institution">
-        <p class="timeline" itemprop="text">' . esc_html(do_shortcode($edu3time)) . '</p>';
+        <p class="timeline" itemprop="text">' . wp_kses_post(do_shortcode($edu3time)) . '</p>';
     }
 
     if (isset($edu3desig) && !empty($edu3desig)) {
         echo '<div class="info">
-              <p class="name" itemprop="text">' . esc_html(do_shortcode($edu3desig)) . '</p>';
+              <p class="name" itemprop="text">' . wp_kses_post(do_shortcode($edu3desig)) . '</p>';
     }
 
     if (isset($edu5com) && !empty($edu5com)) {
-        echo '<p class="address" itemprop="text">' . esc_html(do_shortcode($edu5com)) . '<br>';
+        echo '<p class="address" itemprop="text">' . wp_kses_post(do_shortcode($edu5com)) . '<br>';
     }
 
     if (isset($edu3comsite) && !empty($edu3comsite)) {
@@ -252,16 +168,16 @@ public function widget($args, $instance)
 
     if (isset($edu4time) && !empty($edu4time)) {
         echo '<div class="institution">
-        <p class="timeline" itemprop="text">' . esc_html(do_shortcode($edu4time)) . '</p>';
+        <p class="timeline" itemprop="text">' . wp_kses_post(do_shortcode($edu4time)) . '</p>';
     }
 
     if (isset($edu4desig) && !empty($edu4desig)) {
         echo '<div class="info">
-              <p class="name" itemprop="text">' . esc_html(do_shortcode($edu4desig)) . '</p>';
+              <p class="name" itemprop="text">' . wp_kses_post(do_shortcode($edu4desig)) . '</p>';
     }
 
     if (isset($edu5com) && !empty($edu5com)) {
-        echo '<p class="address" itemprop="text">' . esc_html(do_shortcode($edu5com)) . '<br>';
+        echo '<p class="address" itemprop="text">' . wp_kses_post(do_shortcode($edu5com)) . '<br>';
     }
 
     if (isset($edu4comsite) && !empty($edu4comsite)) {
@@ -272,16 +188,16 @@ public function widget($args, $instance)
 
     if (isset($edu5time) && !empty($edu5time)) {
         echo '<div class="institution">
-        <p class="timeline" itemprop="text">' . esc_html(do_shortcode($edu5time)) . '</p>';
+        <p class="timeline" itemprop="text">' . wp_kses_post(do_shortcode($edu5time)) . '</p>';
     }
 
     if (isset($edu5desig) && !empty($edu5desig)) {
         echo '<div class="info">
-              <p class="name" itemprop="text">' . esc_html(do_shortcode($edu5desig)) . '</p>';
+              <p class="name" itemprop="text">' . wp_kses_post(do_shortcode($edu5desig)) . '</p>';
     }
 
     if (isset($edu5com) && !empty($edu5com)) {
-        echo '<p class="address" itemprop="text">' . esc_html(do_shortcode($edu5com)) . '<br>';
+        echo '<p class="address" itemprop="text">' . wp_kses_post(do_shortcode($edu5com)) . '<br>';
     }
 
     if (isset($edu5comsite) && !empty($edu5comsite)) {
@@ -291,44 +207,6 @@ public function widget($args, $instance)
 
     echo '</div></div></section>';
 
-
-    if (is_customize_preview()) {
-        $id             = $this->id;
-
-        $edutimecolor   = 'color:#999;';
-        $edudesigcolor  = 'color:#000;';
-        $educomcolor    = 'color:#444;';
-
-        $titlecolor     = 'color:#333;';
-        $bgcolor        = 'background-color:#f3f2ee;';
-        $iconcolor      = 'color:rgba(38,37,37,.1)';
-
-
-
-        if (!empty($instance['edutimecolor'])) {
-            $edutimecolor   = 'color: ' . $instance['edutimecolor'] . '; ';
-        }
-        if (!empty($instance['edudesigcolor'])) {
-            $edudesigcolor  = 'color: ' . $instance['edudesigcolor'] . '; ';
-        }
-        if (!empty($instance['educomcolor'])) {
-            $educomcolor    = 'color: ' . $instance['educomcolor'] . '; ';
-        }
-
-        if (!empty($instance['titlecolor'])) {
-            $titlecolor     = 'color: ' . $instance['titlecolor'] . '; ';
-        }
-        if (!empty($instance['iconcolor'])) {
-            $iconcolor      = '' . $instance['iconcolor'] . '; ';
-        }
-        if (!empty($instance['bgcolor'])) {
-            $bgcolor        = 'background-color:' . $instance['bgcolor'] . '; ';
-        }
-
-
-        echo '<style>' . '#' . $id . ' .education .first h3 {' . $titlecolor . '}#' . $id . ' .education .first .svg-inline--fa { ' . $iconcolor . '}#' . $id . ' .education {' . $bgcolor . '}#' . $id . ' .education .institution .timeline {' . $edutimecolor . '}#' . $id . ' .education .institution .name {' . $edudesigcolor . '}#' . $id . ' .education .institution .address, .education a {' . $educomcolor . '}</style>';
-
-    }
   
     /* After widget (defined by themes). */
     echo $args['after_widget'];
@@ -345,13 +223,7 @@ public function form($instance)
         /* Set up some default widget settings. */
     $defaults = array(
         'title'         => esc_attr__('Education', 'cvee'),
-        'titlecolor'    => '#333',
         'icon1'         => __('fas fa-graduation-cap', 'cvee') ,
-        'iconcolor'     => 'rgba(38,37,37,.1)',
-        'bgcolor'       => '#f3f2ee',
-        'edutimecolor'  => '#999',
-        'edudesigcolor' => '#000',
-        'educomcolor'   => '#444',
         'edu1time'      => esc_attr__('September 2013 - February 2014', 'cvee'),
         'edu1desig'     => esc_attr__('Bachelor of Engineering (B.Eng) Information and Communication Technology        ', 'cvee'),
         'edu1com'       => esc_attr__('Asphalt Themes', 'cvee'),
@@ -451,22 +323,14 @@ public function form($instance)
             </select>
         </p>
 
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('iconcolor'); ?>"><?php _e('Icon Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('iconcolor'); ?>" name="<?php echo $this->get_field_name('iconcolor'); ?>" value="<?php echo $instance['iconcolor']; ?>" type="text" />
-        </p>
-        
+      
         <br>
         <!-- Title -->
         <p>
             <label for="<?php echo $this->get_field_name('title'); ?>"><?php esc_html_e('Title', 'cvee'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($instance['title']); ?>" />
         </p>
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('titlecolor'); ?>"><?php _e('Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('titlecolor'); ?>" name="<?php echo $this->get_field_name('titlecolor'); ?>" value="<?php echo $instance['titlecolor']; ?>" type="text" />
-        </p>
-
+      
 
         <br>
             
@@ -590,27 +454,6 @@ public function form($instance)
         <br>
         <br>
 
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('edutimecolor'); ?>"><?php _e('Timeline Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('edutimecolor'); ?>" value="<?php echo $instance['edutimecolor']; ?>" type="text" />
-        </p>
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('edudesigcolor'); ?>"><?php _e('Degree Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('edudesigcolor'); ?>" value="<?php echo $instance['edudesigcolor']; ?>" type="text" />
-        </p>
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('educomcolor'); ?>"><?php _e('Institution Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('educomcolor'); ?>" value="<?php echo $instance['educomcolor']; ?>" type="text" />
-        </p>
-
-
-        <p>
-          <label style="vertical-align: top;" for="<?php echo $this->get_field_id('bgcolor'); ?>"><?php _e('Background Color', 'cvee') ?></label>
-          <input class="widefat color-picker"  id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('bgcolor'); ?>" value="<?php echo $instance['bgcolor']; ?>" type="text" />
-        </p>
-        
     <?php
 
 }
@@ -659,70 +502,9 @@ public function update($new_instance, $old_instance)
     $instance['edu5com']        = wp_kses_post($new_instance['edu5com']);
     $instance['edu5comsite']    = wp_kses_post($new_instance['edu5comsite']);
 
-    $instance['bgcolor']        = sanitize_hex_color($new_instance['bgcolor']);
-    $instance['titlecolor']     = sanitize_hex_color($new_instance['titlecolor']);
-    $instance['iconcolor']      = sanitize_hex_color($new_instance['iconcolor']);
-    $instance['edutimecolor']   = sanitize_hex_color($new_instance['edutimecolor']);
-    $instance['edudesigcolor']  = sanitize_hex_color($new_instance['edudesigcolor']);
-    $instance['educomcolor']    = sanitize_hex_color($new_instance['educomcolor']);
-
     return $instance;
 }
 
-    //ENQUEUE CSS
-function cvee_intro1_css()
-{
-
-    $settings = $this->get_settings();
-    if (!is_customize_preview()) {
-        if (empty($settings)) {
-            return;
-        }
-
-        foreach ($settings as $instance_id => $instance) {
-            $id = $this->id_base . '-' . $instance_id;
-
-            if (!is_active_widget(false, $id, $this->id_base)) {
-                continue;
-            }
-
-            $edutimecolor   = 'color:#999;';
-            $edudesigcolor  = 'color:#000;';
-            $educomcolor    = 'color:#444;';
-    
-            $titlecolor     = 'color:#333;';
-            $bgcolor        = 'background-color:#f3f2ee;';
-            $iconcolor      = 'rgba(38,37,37,.1);';
-
-
-            if (!empty($instance['edutimecolor'])) {
-                $edutimecolor   = 'color: ' . $instance['edutimecolor'] . '; ';
-            }
-            if (!empty($instance['edudesigcolor'])) {
-                $edudesigcolor  = 'color: ' . $instance['edudesigcolor'] . '; ';
-            }
-            if (!empty($instance['educomcolor'])) {
-                $educomcolor    = 'color: ' . $instance['educomcolor'] . '; ';
-            }
-    
-            if (!empty($instance['titlecolor'])) {
-                $titlecolor     = 'color: ' . $instance['titlecolor'] . '; ';
-            }
-            if (!empty($instance['iconcolor'])) {
-                $iconcolor      = 'color:' . $instance['iconcolor'] . '; ';
-            }
-            if (!empty($instance['bgcolor'])) {
-                $bgcolor        = 'background-color:' . $instance['bgcolor'] . '; ';
-            }
-
-
-
-            $widget_style = '#' . $id . ' .education .first h3 {' . $titlecolor . '}#' . $id . ' .education .first .svg-inline--fa { ' . $iconcolor . '}#' . $id . ' .education {' . $bgcolor . '}#' . $id . ' .education .institution .timeline {' . $edutimecolor . '}#' . $id . ' .education .institution .name {' . $edudesigcolor . '}#' . $id . ' .education .institution .address, .education a {' . $educomcolor . '}';
-            wp_add_inline_style('cvee-style', $widget_style);
-        }
-    }
-
-}
 
 }
 
