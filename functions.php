@@ -206,6 +206,14 @@ require get_template_directory() . '/inc/template-functions.php';
 
 
 /**
+ * Theme activation redirector
+ */
+require_once( trailingslashit( get_template_directory() ) . '/inc/dashboard/cvee-info-dashboard.php');
+
+
+
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';

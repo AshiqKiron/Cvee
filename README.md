@@ -75,6 +75,11 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 
 ## Changelog
 
+
+#### 0.0.8 (25-06-2018)
+* Add: Dashboard section
+
+
 #### 0.0.7 (22-06-2018)
 * Fix: Customizer error
 
