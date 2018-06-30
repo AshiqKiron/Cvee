@@ -3,8 +3,8 @@ Theme Name: Cvee
 Theme URI: https://asphaltthemes.com/cvee
 Author: Asphalt Themes
 Author URI: https://twitter.com/AshiqKiron
-Description: Fully professional WordPress CV theme, You can use this theme to create online professional CV on the get go. CVEE is  clean and free theme for WordPress site owners.The theme comes with Full width layout, easy Logo upload. Resumee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, vCard or resume website. The best free WordPress CV theme 2018.
-Version: 0.0.8
+Description: Fully professional WordPress CV theme, You can use this theme to create online professional CV on the get go. Cvee is perfect for WordPress CV theme. The theme comes with Full width layout, easy Logo upload. Cvee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, vCard, curriculam vitae or resume website. The best free WordPress CV theme 2018.
+Version: 0.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cvee
@@ -714,7 +714,7 @@ a:active {
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding: 10px 15%;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
 }
 
 #masthead .site-branding .site-title {
@@ -787,7 +787,7 @@ button.sidr-class-menu-toggle {
 
 .menu-toggle {
     background-color: #f3f2ee;
-    color: #111;
+    color: #2196f3;
     -webkit-box-shadow: 1px 1px 1px 1px #eee;
     box-shadow: 1px 1px 1px 1px #eee;
     -webkit-transition: .5s ease all;
@@ -1025,7 +1025,7 @@ button.sidr-class-menu-toggle {
 --------------------------------------------------------------*/
 
 .intro {
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     text-align: center;
     padding: 2% 0 5%;
 }
@@ -1056,7 +1056,7 @@ button.sidr-class-menu-toggle {
 --------------------------------------------------------------*/
 
 .experience3 {
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 2% 15%;
 }
 
@@ -1085,7 +1085,7 @@ button.sidr-class-menu-toggle {
 .experience3 .first .fa,
 .experience3 .first .fas {
     font-size: 23px;
-    color: rgba(38, 37, 37, .1);
+    color: #2196f3;
     height: 1em;
 }
 
@@ -1135,7 +1135,7 @@ button.sidr-class-menu-toggle {
 --------------------------------------------------------------*/
 
 .education {
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 3% 15%;
 }
 
@@ -1164,7 +1164,7 @@ button.sidr-class-menu-toggle {
 .education .first .fa,
 .education .first .fas {
     font-size: 23px;
-    color: rgba(38, 37, 37, .1);
+    color: #2196f3;
     height: 1em;
 }
 
@@ -1407,7 +1407,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 8px 10px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -1420,7 +1420,7 @@ button.sidr-class-menu-toggle {
 .footer-widget input[type="button"]:hover,
 .footer-widget input[type="reset"]:hover,
 .footer-widget input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -1475,7 +1475,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 8px 10px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -1488,7 +1488,7 @@ button.sidr-class-menu-toggle {
 #secondary input[type="button"]:hover,
 #secondary input[type="reset"]:hover,
 #secondary input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -1497,12 +1497,12 @@ button.sidr-class-menu-toggle {
 
 .site-footer {
     text-align: center;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 10px 0;
 }
 
 .site-footer .site-info {
-    padding: 1% 0;
+    padding: 5px 0;
 }
 
 .site-footer a {
@@ -1578,7 +1578,7 @@ button.sidr-class-menu-toggle {
 
 .blog_page .blog_pagination {
     text-align: center;
-    background: rgba(240, 238, 231, 0.96078);
+    background: #f1f5f8;
     padding: 2% 0;
 }
 
@@ -1597,7 +1597,7 @@ button.sidr-class-menu-toggle {
 }
 
 .blog_page .bloglist {
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 2% 15% 2%;
     text-align: center;
 }
@@ -1751,7 +1751,7 @@ button.sidr-class-menu-toggle {
 .cv-single-post .post_top .cat-links a {
     text-decoration: none;
     color: #2196F3;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 3px 5px;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
@@ -1795,7 +1795,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 10px 20px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -1808,7 +1808,7 @@ button.sidr-class-menu-toggle {
 .cv-single-post input[type="button"]:hover,
 .cv-single-post input[type="reset"]:hover,
 .cv-single-post input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -1837,7 +1837,7 @@ button.sidr-class-menu-toggle {
 }
 
 .post_mid .entry-meta {
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 5px;
 }
 
@@ -1880,7 +1880,7 @@ button.sidr-class-menu-toggle {
 .post-navigation .nav-next {
     -webkit-box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
     box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     border: 1px solid rgba(158, 158, 158, 0.34118);
 }
@@ -1967,7 +1967,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 20px 30px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     float: right;
@@ -1981,7 +1981,7 @@ button.sidr-class-menu-toggle {
 .comments-area input[type="button"]:hover,
 .comments-area input[type="reset"]:hover,
 .comments-area input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2050,7 +2050,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 10px 20px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2063,7 +2063,7 @@ button.sidr-class-menu-toggle {
 .content_only_page input[type="button"]:hover,
 .content_only_page input[type="reset"]:hover,
 .content_only_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2101,7 +2101,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 10px 20px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2114,7 +2114,7 @@ button.sidr-class-menu-toggle {
 .fullwidth_condensed_page input[type="button"]:hover,
 .fullwidth_condensed_page input[type="reset"]:hover,
 .fullwidth_condensed_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2158,7 +2158,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 10px 20px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2171,7 +2171,7 @@ button.sidr-class-menu-toggle {
 .header_only_page input[type="button"]:hover,
 .header_only_page input[type="reset"]:hover,
 .header_only_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2260,7 +2260,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 8px 10px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2273,7 +2273,7 @@ button.sidr-class-menu-toggle {
 .left_sidebar_page input[type="button"]:hover,
 .left_sidebar_page input[type="reset"]:hover,
 .left_sidebar_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2354,7 +2354,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 8px 10px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2367,7 +2367,7 @@ button.sidr-class-menu-toggle {
 .right_sidebar_page input[type="button"]:hover,
 .right_sidebar_page input[type="reset"]:hover,
 .right_sidebar_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2441,7 +2441,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 8px 10px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2454,7 +2454,7 @@ button.sidr-class-menu-toggle {
 .default_page input[type="button"]:hover,
 .default_page input[type="reset"]:hover,
 .default_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2485,7 +2485,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 18px 30px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2498,7 +2498,7 @@ button.sidr-class-menu-toggle {
 .search_page input[type="button"]:hover,
 .search_page input[type="reset"]:hover,
 .search_page input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2603,7 +2603,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 18px 30px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2616,7 +2616,7 @@ button.sidr-class-menu-toggle {
 .error_page .err_form input[type="button"]:hover,
 .error_page .err_form input[type="reset"]:hover,
 .error_page .err_form input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2635,7 +2635,7 @@ button.sidr-class-menu-toggle {
     box-shadow: none;
     text-shadow: none;
     padding: 10px 20px;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     font-size: 15px;
     color: #111;
     cursor: pointer;
@@ -2648,7 +2648,7 @@ button.sidr-class-menu-toggle {
 .error_page .error_widgets input[type="button"]:hover,
 .error_page .error_widgets input[type="reset"]:hover,
 .error_page .error_widgets input[type="submit"]:hover {
-    border: 1px solid #f3f2ee;
+    border: 1px solid #f1f5f8;
     background: #111;
     color: #fff;
     -webkit-transition: .5s ease all;
@@ -2719,7 +2719,7 @@ button.sidr-class-menu-toggle {
     float: left;
     width: 30%;
     margin-right: 3%;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
@@ -2793,7 +2793,7 @@ button.sidr-class-menu-toggle {
 .posts-navigation .nav-next {
     -webkit-box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
     box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     border: 1px solid rgba(158, 158, 158, 0.34118);
 }
@@ -2879,7 +2879,7 @@ button.sidr-class-menu-toggle {
     width: 30%;
     margin-right: 3%;
     word-break: break-all;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
@@ -2953,7 +2953,7 @@ button.sidr-class-menu-toggle {
 .posts-navigation .nav-next {
     -webkit-box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
     box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     border: 1px solid rgba(158, 158, 158, 0.34118);
 }
@@ -3045,7 +3045,7 @@ button.sidr-class-menu-toggle {
     word-break: break-all;
     width: 44%;
     margin-right: 3%;
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
@@ -3119,7 +3119,7 @@ button.sidr-class-menu-toggle {
 .posts-navigation .nav-next {
     -webkit-box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
     box-shadow: 1px 1px 10px 5px rgba(238, 238, 238, 0.87843);
-    background-color: #f3f2ee;
+    background-color: #f1f5f8;
     padding: 20px;
     border: 1px solid rgba(158, 158, 158, 0.34118);
 }

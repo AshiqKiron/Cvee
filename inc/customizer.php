@@ -135,7 +135,7 @@ function cvee_customize_register( $wp_customize ) {
 
 	// Header background
 	$wp_customize->add_setting('cvee[nav_background]',array(
-				'default'         => '#f3f2ee',
+				'default'         => '#f1f5f8',
 				'sanitize_callback' => 'sanitize_hex_color',
 				'transport'       => 'postMessage',
 				'type'            => 'option',

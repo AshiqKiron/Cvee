@@ -76,6 +76,12 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 ## Changelog
 
 
+#### 0.0.9 (29-06-2018)
+* Tweak: Change Widget main color
+* Tweak: Change Screenshot
+* Fix: Fixed Theme description
+
+
 #### 0.0.8 (25-06-2018)
 * Add: Dashboard section
 
