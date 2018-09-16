@@ -1,8 +1,8 @@
 # Cvee 
 
 **Contributors:** asphaltthemes, ashiquzzaman
-**Requires at least:** WordPress 4.4  
-**Tested up to:** WordPress 4.9.6
+**Requires at least:** WordPress 4.5
+**Tested up to:** WordPress 4.9.8
 **Stable tag:** 1.0
 **Version:** 0.0.6 
 **License:** GPLv2 or later  
@@ -74,6 +74,11 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 
 
 ## Changelog
+
+
+#### 0.1.1 (17th September 2018)
+* Update: Tested upto 4.9.8
+* Add: Minimum required version
 
 
 
