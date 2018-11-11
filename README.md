@@ -76,6 +76,10 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 ## Changelog
 
 
+#### 0.1.2 (12 November, 2018)
+* Add: Gutenberg theme opt in
+
+
 #### 0.1.1 (17th September 2018)
 * Update: Tested upto 4.9.8
 * Add: Minimum required version

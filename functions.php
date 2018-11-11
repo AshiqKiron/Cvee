@@ -62,6 +62,18 @@ if ( ! function_exists( 'cvee_setup' ) ) :
 			'caption',
 		) );
 
+		//Add responsive embed for Gutenberg
+		add_theme_support( 'responsive-embeds' );
+
+
+		//Add default Gutenberg editor styles
+		add_theme_support( 'wp-block-styles' );
+
+
+		//Add Gutenberg image align wide feature
+		add_theme_support( 'align-wide' );
+
+
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'cvee_custom_background_args', array(
 			'default-color' => 'ffffff',
