@@ -2,7 +2,7 @@
 
 **Contributors:** asphaltthemes, ashiquzzaman
 **Requires at least:** WordPress 4.5
-**Tested up to:** WordPress 4.9.8
+**Tested up to:** WordPress 5.0.2
 **Stable tag:** 1.0
 **Version:** 0.0.6 
 **License:** GPLv2 or later  
@@ -74,6 +74,11 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 
 
 ## Changelog
+
+
+#### 0.1.3 (22 December, 2018)
+* Add: Gutenberg full bleed image CSS
+* Fix: Gutenberg default button block issue
 
 
 #### 0.1.2 (12 November, 2018)
