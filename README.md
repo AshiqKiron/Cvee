@@ -2,7 +2,7 @@
 
 **Contributors:** asphaltthemes, ashiquzzaman
 **Requires at least:** WordPress 4.5
-**Tested up to:** WordPress 5.0.2
+**Tested up to:** WordPress 5.2
 **Stable tag:** 1.0
 **Version:** 0.0.6 
 **License:** GPLv2 or later  
@@ -74,6 +74,10 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 
 
 ## Changelog
+
+
+#### 0.1.4 (22 April, 2019)
+* Add: Tested up WordPress 5.2
 
 
 #### 0.1.3 (22 December, 2018)
