@@ -67,8 +67,8 @@ function cvee_getting_started() {
 			<div class="col-md-12 text-block" style="padding-top: 2%;">
 			<div class="row">
 					<div class="col-md-7 dashboard-upgrade-left">
-					<img src="https://asphaltthemes.com/wp-content/uploads/2018/05/cvee-theme-feature-print-ready-.jpg" alt="<?php esc_html_e( 'Why Upgrade To cvee Pro', 'cvee' ); ?>" />
-					</div>
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/print-ready.jpg'; ?>" alt="<?php esc_html_e( 'Why Upgrade To Cvee Pro', 'cvee' ); ?>" />	
+				</div>
 					<div class="col-md-5 dashboard-upgrade-right">
 					<h2 class="dashboard-upgrade-title">Print Ready CV</h2>
 					<span class="dashboard-upgrade-button"><a href="https://asphaltthemes.com/cvee#buy_pro&utm_source=dashboard&utm_medium=cveetheme&utm_campaign=upsell_link" target="_blank">Upgrade</a></span>
@@ -91,7 +91,8 @@ function cvee_getting_started() {
 			<div class="col-md-12 text-block no-bottom-margin">
 			<div class="row">
 					<div class="col-md-7 dashboard-upgrade-left">
-					<img src="https://asphaltthemes.com/wp-content/uploads/2018/05/cvee-pro-theme-demo-template-sccrenshot.png" alt="<?php esc_html_e( 'More CV Templates', 'cvee' ); ?>">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/template.png'; ?>" alt="<?php esc_html_e( 'More CV Templates', 'cvee' ); ?>" />	
+					
 					</div>
 					<div class="col-md-5 dashboard-upgrade-right">
 					<h2 class="dashboard-upgrade-title"><?php esc_attr_e('More CV Templates', 'cvee'); ?></h2>
@@ -114,7 +115,7 @@ function cvee_getting_started() {
 			<div class="col-md-12 text-block no-bottom-margin">
 			<div class="row">
 					<div class="col-md-7 dashboard-upgrade-left">
-					<img src="https://asphaltthemes.com/wp-content/uploads/2018/05/professional-cv-look.jpg" alt="<?php esc_html_e( 'SVG Generator', 'cvee' ); ?>">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/professional-cv-look.jpg'; ?>" alt="<?php esc_html_e( 'Professional Look', 'cvee' ); ?>" />	
 					</div>
 					<div class="col-md-5 dashboard-upgrade-right">
 					<h2 class="dashboard-upgrade-title">Industry Standard CV</h2>
@@ -136,7 +137,7 @@ function cvee_getting_started() {
 			<div class="col-md-12 text-block no-bottom-margin">
 				<div class="row">
 					<div class="col-md-7 dashboard-upgrade-left">
-					<img src="https://asphaltthemes.com/wp-content/uploads/2018/05/cvee-advance-widget-options.jpg" alt="<?php esc_html_e( 'Advance Widget Options', 'cvee' ); ?>">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/widget.jpg'; ?>" alt="<?php esc_html_e( 'Advance widget options', 'cvee' ); ?>" />	
 					</div>
 					<div class="col-md-5 dashboard-upgrade-right">
 					<h2 class="dashboard-upgrade-title">Advance Widget Options</h2>
@@ -165,7 +166,7 @@ function cvee_getting_started() {
 			<div class="col-md-12 text-block no-bottom-margin">
 				<div class="row">
 					<div class="col-md-7 dashboard-upgrade-left">
-					<img src="https://asphaltthemes.com/wp-content/uploads/2018/05/clean-design-cvee-wordpress-theme-screenshot.jpg" alt="<?php esc_html_e( 'Trumbowyg Editor Options', 'cvee' ); ?>">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/clean.jpg'; ?>" alt="<?php esc_html_e( 'Clean Design', 'cvee' ); ?>" />	
 					</div>
 					<div class="col-md-5 dashboard-upgrade-right">
 					<h2 class="dashboard-upgrade-title">Clean Design</h2>

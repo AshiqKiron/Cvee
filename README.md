@@ -76,6 +76,10 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 ## Changelog
 
 
+#### 0.1.5 (7 May, 2019)
+* Fix: Upsell Dashboard image not loading
+
+
 #### 0.1.4 (22 April, 2019)
 * Add: Tested up WordPress 5.2
 
