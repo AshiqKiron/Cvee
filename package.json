@@ -9,7 +9,7 @@
   "author": "Ashiq",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-css-purge": "^3.0.3",
     "gulp-jsbeautifier": "^2.1.2",
     "gulp-livereload": "^3.8.1",
